@@ -1034,3 +1034,7 @@ table { border-collapse: collapse; }
 .link-grid { list-style: none; padding: 0; margin: 0 0 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
 .link-grid li a { display: block; padding: 8px 12px; background: var(--white); border: 1px solid var(--foam); border-left: 3px solid var(--main); border-radius: var(--radius); }
 .link-grid li a:hover { background: var(--glow); text-decoration: none; }
+
+/* ===== 果実の一覧 ===== */
+/* 特徴の欄が細くなると行だけが高くなるので、下限を決めて横に伸ばす */
+.fruit-table td.facts { min-width: 16em; }
