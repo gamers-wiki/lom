@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ボディの作成 - 聖剣伝説 Legend of Mana 攻略Wiki</title>
+  <meta name="description" content="聖剣伝説 Legend of Mana のゴーレムのボディ作成。材料の武器と防具で決まる HP・攻撃力・防御力の計算式、攻撃タイプ7種と武器の系統、防具の数で変わるロジックボードの大きさと故障率、カラー12系統のペイントをまとめています。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/lom/golem/body/">
+
+  <meta property="og:site_name" content="聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ボディの作成 - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:description" content="聖剣伝説 Legend of Mana のゴーレムのボディ作成。材料の武器と防具で決まる HP・攻撃力・防御力の計算式、攻撃タイプ7種と武器の系統、防具の数で変わるロジックボードの大きさと故障率、カラー12系統のペイントをまとめています。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/lom/golem/body/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ボディの作成 - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta name="twitter:description" content="聖剣伝説 Legend of Mana のゴーレムのボディ作成。材料の武器と防具で決まる HP・攻撃力・防御力の計算式、攻撃タイプ7種と武器の系統、防具の数で変わるロジックボードの大きさと故障率、カラー12系統のペイントをまとめています。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+
+  <link rel="icon" href="/lom/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/lom/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/lom/apple-touch-icon.png">
+  <meta name="theme-color" content="#1f3d2b">
+
+  <link rel="stylesheet" href="/lom/css/style.css?v=1060b4ad">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/lom/"},{"@type":"ListItem","position":2,"name":"ゴーレム製作","item":"https://gamers-wiki.github.io/lom/golem/"},{"@type":"ListItem","position":3,"name":"ボディの作成","item":"https://gamers-wiki.github.io/lom/golem/body/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/lom/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">❀</span>
+        <span class="logo-text">
+          <span class="logo-title">LEGEND OF MANA</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/lom/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：エスカデ、ニキータ、果樹園）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/story/">イベント攻略</a></li>
+      <li><a href="/lom/artifacts/">アーティファクト</a></li>
+      <li><a href="/lom/lands/">ランド</a></li>
+      <li><a href="/lom/characters/">キャラクター</a></li>
+      <li><a href="/lom/battle/">バトル・必殺技</a></li>
+      <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+      <li><a href="/lom/items/">アイテム</a></li>
+      <li><a href="/lom/orchard/">果樹園</a></li>
+      <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+      <li><a href="/lom/golem/" class="current">ゴーレム</a></li>
+      <li><a href="/lom/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/lom/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/golem/">ゴーレム製作</a></li>
+      <li>ボディの作成</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/story/">イベント攻略（全68イベント）</a></li>
+          <li><a href="/lom/artifacts/">アーティファクト・ランドメイク</a></li>
+          <li><a href="/lom/lands/">ランド（全27＋1）</a></li>
+          <li><a href="/lom/characters/">キャラクター</a></li>
+          <li><a href="/lom/battle/">バトル・必殺技</a></li>
+          <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+          <li><a href="/lom/items/">アイテム</a></li>
+          <li><a href="/lom/orchard/">果樹園</a></li>
+          <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+          <li><a href="/lom/golem/">ゴーレム製作</a></li>
+          <li><a href="/lom/extra/">やり込み・シークレット</a></li>
+          <li><a href="/lom/column/">世界設定・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">3大ストーリー</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/lom/story/jewel/">宝石泥棒編</a></li>
+          <li><a href="/lom/story/escad/">エスカデ編</a></li>
+          <li><a href="/lom/story/dragon/">ドラゴンキラー編</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/lom/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/about/">このWikiについて</a></li>
+          <li><a href="/lom/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>ボディの作成</h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/lom/golem/">ゴーレム製作</a></span><span>能力10項目</span></div>
+      </div>
+
+      <p class="article-lead">
+        ボディはゴーレムの<strong>基本性能を決めるパーツ</strong>です。HP も攻撃力も防御力も、材料にした武器・防具の性能から決まります。
+        材料に選べるのは武器1個まで、防具3個までで、<strong>何をどれだけ使うか</strong>によって、ロジックボードの大きさや故障率まで変わります。
+      </p>
+
+      <div class="toc" data-auto-toc></div>
+
+      <div class="note">
+        <p>ゴーレムのシンクロは、材料に何を使っても「HP回復量UP」になるため、<strong>シンクロを狙って材料を決める必要はありません</strong>（→<a href="/lom/battle/sync/">シンクロ</a>）。</p>
+      </div>
+
+      <h2>材料の決まり</h2>
+      <p>材料は<strong>武器0〜1個 ＋ 防具0〜3個（合わせて1〜4個）</strong>です。武器だけ、防具だけのどちらでも作れます。</p>
+      <ul>
+        <li>ゴーレム研究室の生命球に、武器・防具を組み合わせて作る</li>
+        <li>基本的な性能を決めるパーツ</li>
+        <li>廃棄すると材料が手元にもどるので、作り直しに使える</li>
+        <li>名前は変更できる</li>
+      </ul>
+      <p>材料の性能の受け継がれかたには、次の決まりもあります。</p>
+      <ul>
+        <li>武器の攻撃力は10〜200の範囲でしか計算されない。武器だけで作ったときのHPは最大500</li>
+        <li>防具の属性レベルも受け継がれ、属性耐性の効きかたに影響する（画面には表示されない）</li>
+      </ul>
+      <div class="tip">
+        <p><strong>ボディは作り直せます。</strong>廃棄すると材料が手元にもどるので、ひとまず作ってみて、ボードの大きさや攻撃タイプが思ったものと違えば材料を組み替えられます。材料が減るのは<a href="/lom/golem/blocks/">ロジックブロック</a>のほうです。</p>
+      </div>
+
+      <h2 id="materials">材料で何が決まるか</h2>
+      <p>ボディの能力は10項目です。どれも材料のどこを見るかが決まっていて、武器から決まるものと防具から決まるものに分かれます。記号は下の「<a href="#from">武器で決まるもの・防具で決まるもの</a>」の表と同じものです。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>記号</th><th>決まるもの</th><th>何で決まるか</th><th>計算式・上限・下限</th><th>コツ</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>A</th>
+              <th class="wrap">HP</th>
+              <td class="wrap">材料の武器の攻撃力と、防具の防御力合計</td>
+              <td class="wrap">
+                <ul class="plain"><li><strong>武器だけ</strong><br>武器の攻撃力 × 2.5</li><li><strong>防具だけ</strong><br>防具の防御力合計 × 2.5 ＋ 25</li><li><strong>武器と防具</strong><br>（武器の攻撃力 ＋ 防具の防御力合計）× 2.5</li></ul>                <br><small>上限・下限：49以下は50に、1000以上は999になる。端数は切り捨て</small>
+              </td>
+              <td class="wrap">攻撃力の高い武器と、防御力合計の高い防具を使う</td>
+            </tr>
+            <tr>
+              <th>B</th>
+              <th class="wrap">攻撃力</th>
+              <td class="wrap">材料の武器の攻撃力</td>
+              <td class="wrap">
+                武器の攻撃力 ＝ ゴーレムの攻撃力                <br><small>上限・下限：9以下は10に、201以上は200になる。武器を使わなかったときも10</small>
+              </td>
+              <td class="wrap">攻撃力の高い武器を使う</td>
+            </tr>
+            <tr>
+              <th>C</th>
+              <th class="wrap">防御力</th>
+              <td class="wrap">材料の防具の防御力</td>
+              <td class="wrap">
+                全防具の防御力の合計（たたき型・斬り型・突き型・魔法型それぞれで計算）              </td>
+              <td class="wrap">防御力の高い防具を使う</td>
+            </tr>
+            <tr>
+              <th>D</th>
+              <th class="wrap">能力値</th>
+              <td class="wrap">材料の武器と防具の能力値ボーナス</td>
+              <td class="wrap">
+                能力値ボーナスの合計 × 5 ＋ 20                <br><small>上限・下限：19以下は20に、100以上は99になる</small>
+              </td>
+              <td class="wrap">能力値ボーナスが高い武器や防具を使う</td>
+            </tr>
+            <tr>
+              <th>E</th>
+              <th class="wrap">攻撃タイプ</th>
+              <td class="wrap">材料の武器の系統</td>
+              <td class="wrap">
+                ―              </td>
+              <td class="wrap">ロジックブロック作成のことまで考えて選ぶ</td>
+            </tr>
+            <tr>
+              <th>F</th>
+              <th class="wrap">ロジックボードの大きさ</th>
+              <td class="wrap">材料の防具の数</td>
+              <td class="wrap">
+                ―              </td>
+              <td class="wrap">防具を3個使うと最大になる</td>
+            </tr>
+            <tr>
+              <th>G</th>
+              <th class="wrap">故障率</th>
+              <td class="wrap">材料の防具の数</td>
+              <td class="wrap">
+                ―                <br><small>上限・下限：ゼロにはできない</small>
+              </td>
+              <td class="wrap">防具を3個使うといちばん低くなる</td>
+            </tr>
+            <tr>
+              <th>H</th>
+              <th class="wrap">属性レベル</th>
+              <td class="wrap">材料の武器の属性レベル</td>
+              <td class="wrap">
+                武器の属性レベル ＝ ゴーレムの属性レベル              </td>
+              <td class="wrap">同じ属性の付加属性・属性耐性とセットで考える</td>
+            </tr>
+            <tr>
+              <th>I</th>
+              <th class="wrap">付加属性</th>
+              <td class="wrap">材料の武器の付加属性</td>
+              <td class="wrap">
+                武器の付加属性 ＝ ゴーレムの付加属性              </td>
+              <td class="wrap">付加属性を多く持つ武器を使う</td>
+            </tr>
+            <tr>
+              <th>J</th>
+              <th class="wrap">特殊防御</th>
+              <td class="wrap">材料の全防具のステータス異常耐性と属性耐性</td>
+              <td class="wrap">
+                ―              </td>
+              <td class="wrap">属性耐性やステータス異常耐性を多く持つ防具を使う</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>防御力は攻撃の種別ごとに別々に決まるので、材料の防具が得意にしている種別が、そのままゴーレムの得意・不得意になります。</p>
+
+      <h2>攻撃タイプ</h2>
+      <p>攻撃タイプは<strong>材料に使った武器の系統</strong>で決まり、全部で7種類あります。タイプごとに使える専用の行動が変わるので、材料の武器を選んだ時点で、そのゴーレムが取れる行動の範囲が決まります。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>攻撃タイプ</th><th>材料に使う武器の系統</th><th>特徴</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>ノーマル</th>
+              <td class="wrap">材料に武器を使わない</td>
+              <td class="wrap">攻撃に武器を使わない。専用の行動が無く、汎用攻撃系のブロックだけを使う</td>
+            </tr>
+            <tr>
+              <th>スピア</th>
+              <td class="wrap"><a href="/lom/battle/dagger/">短剣</a>・<a href="/lom/battle/spear/">槍</a>・<a href="/lom/battle/rod/">ロッド</a></td>
+              <td class="wrap">槍とドリルを使う。『ドリルロケット』は遠距離まで届く</td>
+            </tr>
+            <tr>
+              <th>ギロチン</th>
+              <td class="wrap"><a href="/lom/battle/sword/">片手剣</a>・<a href="/lom/battle/axe/">片手斧</a></td>
+              <td class="wrap">本来は近距離用のギロチンで、遠距離・中距離・近距離のいずれも攻撃する</td>
+            </tr>
+            <tr>
+              <th>チェーンソー</th>
+              <td class="wrap"><a href="/lom/battle/greatsword/">大剣</a>・<a href="/lom/battle/battleaxe/">バトルアックス</a></td>
+              <td class="wrap">小型のチェーンソーを使う。『チェーンソー回し』は自分のまわりを回転しながら攻撃する</td>
+            </tr>
+            <tr>
+              <th>ハンマー</th>
+              <td class="wrap"><a href="/lom/battle/hammer/">バトルハンマー</a>・<a href="/lom/battle/nunchaku/">ヌンチャク</a></td>
+              <td class="wrap">ハンマーとトゲ鉄球を使う。『トゲ鉄球雨あられ』は接近戦向き</td>
+            </tr>
+            <tr>
+              <th>パンチ</th>
+              <td class="wrap"><a href="/lom/battle/glove/">グラブ</a></td>
+              <td class="wrap">自分の拳で攻撃する。『ロケットパンチ』は遠距離も攻撃できる</td>
+            </tr>
+            <tr>
+              <th>ショットガン</th>
+              <td class="wrap"><a href="/lom/battle/bow/">弓</a></td>
+              <td class="wrap">飛び道具を使う。『ネットショット』は射程が短く、攻撃範囲が広い</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="warning">
+        <p>ノーマル以外のタイプには、その武器を使う専用の行動が3〜4種類ずつ用意されています。<strong>ブロックとボディの攻撃タイプが一致しないと、そのブロックは使えません。</strong></p>
+        <p>作りたい行動が決まっているなら、<strong>ボディの攻撃タイプを先に決めてから</strong>材料の武器を選びます。どのブロックがどの攻撃タイプ専用かは<a href="/lom/golem/blocks/">ロジックブロック</a>にあります。</p>
+      </div>
+
+      <h2>防具の数で決まるもの</h2>
+      <p>材料に使った<strong>防具の数</strong>だけで、ロジックボードの大きさと故障率が決まります。防具の性能は関係なく、数だけを見ます。どちらも防具を多く使うほど有利になるので、特別な理由がなければ上限まで使います。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>材料の防具</th><th>ロジックボードの大きさ</th><th>故障率</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>0〜1個</th>
+              <td>4×4マス</td>
+              <td class="num">35／100</td>
+            </tr>
+            <tr>
+              <th>2個</th>
+              <td>5×5マス</td>
+              <td class="num">25／100</td>
+            </tr>
+            <tr>
+              <th>3個</th>
+              <td>6×6マス</td>
+              <td class="num">15／100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>ボードが大きいほど、並べられるロジックブロックが増えます。横軸はレンジと呼ばれ、ボードが大きくなるとレンジの数も増えます。レンジの意味とブロックの並べかたは<a href="/lom/golem/logic/">ロジックの構築と改良</a>にあります。</p>
+      <div class="warning">
+        <p><strong>故障率はゼロにはできないため、防具を上限まで使っても行動が失敗することはあります。</strong>行動するたびに失敗の判定が入ります。</p>
+      </div>
+
+      <h2 id="from">武器で決まるもの・防具で決まるもの</h2>
+      <p>同じ材料でも、武器から受け継ぐものと防具から受け継ぐものは別です。記号は「<a href="#materials">材料で何が決まるか</a>」の表と対応しています。</p>
+
+      <h3>武器で決まるもの</h3>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>記号</th><th>ボディの能力</th><th>武器の何を見るか</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>A</th><th class="wrap">HP</th><td class="wrap">攻撃力</td></tr>
+            <tr><th>B</th><th class="wrap">攻撃力</th><td class="wrap">攻撃力</td></tr>
+            <tr><th>D</th><th class="wrap">能力値</th><td class="wrap">能力値ボーナス</td></tr>
+            <tr><th>E</th><th class="wrap">攻撃タイプ</th><td class="wrap">系統</td></tr>
+            <tr><th>H</th><th class="wrap">属性レベル</th><td class="wrap">属性レベル</td></tr>
+            <tr><th>I</th><th class="wrap">付加属性</th><td class="wrap">付加属性</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>防具で決まるもの</h3>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>記号</th><th>ボディの能力</th><th>防具の何を見るか</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>A</th><th class="wrap">HP</th><td class="wrap">防御力の合計</td></tr>
+            <tr><th>C</th><th class="wrap">防御力</th><td class="wrap">攻撃種別ごとの防御力</td></tr>
+            <tr><th>D</th><th class="wrap">能力値</th><td class="wrap">能力値ボーナス</td></tr>
+            <tr><th>F</th><th class="wrap">ロジックボードの大きさ</th><td class="wrap">個数</td></tr>
+            <tr><th>G</th><th class="wrap">故障率</th><td class="wrap">個数</td></tr>
+            <tr><th>J</th><th class="wrap">特殊防御</th><td class="wrap">属性耐性・ステータス異常耐性</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>HP と能力値は、武器と防具の両方から決まります。材料にちょうどよいものが無いときは、<a href="/lom/equipment/crafting/">武具作成の基本</a>と<a href="/lom/equipment/remodel/">改造のしくみ</a>で自分の手で用意できます。</p>
+
+      <h2>ボディのペイント</h2>
+      <p>ボディは果実で色を塗れます。<strong>カラーは性能に影響しない</strong>ので、見た目の好みだけで選んで問題ありません。カラーは12系統・32種類で、37種類の果実が着色に使えます。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>カラー系統</th><th>着色名</th><th>着色に使う果実</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="1">ノーマル系</th>
+              <th>ノーマル</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f14">ハニーオニオン</a></td>
+            </tr>
+            <tr>
+              <th rowspan="1">ゴールド系</th>
+              <th>グラスゴールド</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f29">ゴールドクローバー</a></td>
+            </tr>
+            <tr>
+              <th rowspan="2">パープル系</th>
+              <th>ベリーパープル</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f32">ビーダマンベリー</a></td>
+            </tr>
+            <tr>
+              <th>ユリパープル</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f31">ユリグリンピース</a></td>
+            </tr>
+            <tr>
+              <th rowspan="2">オレンジ系</th>
+              <th>リーフオレンジ</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f12">シューズビワ</a>・<a href="/lom/orchard/fruits/#f13">パンプキンボム</a></td>
+            </tr>
+            <tr>
+              <th>サンオレンジ</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f11">ツノガイニンジン</a>・<a href="/lom/orchard/fruits/#f15">タコオレンジ</a></td>
+            </tr>
+            <tr>
+              <th rowspan="2">イエロー系</th>
+              <th>スイートイエロー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f16">イカレモン</a>・<a href="/lom/orchard/fruits/#f17">バネバナナ</a></td>
+            </tr>
+            <tr>
+              <th>サワーイエロー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f18">ひまわりとうもろこし</a>・<a href="/lom/orchard/fruits/#f19">フィッシュフルーツ</a></td>
+            </tr>
+            <tr>
+              <th rowspan="4">レッド系</th>
+              <th>イチゴレッド</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f7">さいころいちご</a></td>
+            </tr>
+            <tr>
+              <th>ピーチレッド</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f8">ドッグピーチ</a></td>
+            </tr>
+            <tr>
+              <th>リンゴレッド</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f9">サンタリンゴ</a></td>
+            </tr>
+            <tr>
+              <th>トマトレッド</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f10">クジラトマト</a></td>
+            </tr>
+            <tr>
+              <th rowspan="3">グレー系</th>
+              <th>ブドウグレー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f35">すずぶどう</a></td>
+            </tr>
+            <tr>
+              <th>モアイグレー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f3">スウィートモアイ</a></td>
+            </tr>
+            <tr>
+              <th>まき貝グレー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f2">マキガイカブ</a></td>
+            </tr>
+            <tr>
+              <th rowspan="1">ブラウン系</th>
+              <th>小屋ブラウン</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f37">小屋ダケ</a></td>
+            </tr>
+            <tr>
+              <th rowspan="3">シルバー系</th>
+              <th>ペアシルバー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f4">ハイヒールペア</a></td>
+            </tr>
+            <tr>
+              <th>王冠シルバー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f1">クラウンガーリック</a></td>
+            </tr>
+            <tr>
+              <th>ドッキリシルバー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f36">ドッキリマッシュ</a></td>
+            </tr>
+            <tr>
+              <th rowspan="1">アプリコット系</th>
+              <th>アプリコット</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f6">キャットアプリコット</a></td>
+            </tr>
+            <tr>
+              <th rowspan="4">ブルー系</th>
+              <th>サイブルー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f30">サイメロン</a></td>
+            </tr>
+            <tr>
+              <th>シャチブルー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f33">シャチナス</a></td>
+            </tr>
+            <tr>
+              <th>マスクブルー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f34">マスクイモ</a></td>
+            </tr>
+            <tr>
+              <th>バジルブルー</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f27">スペードバジル</a></td>
+            </tr>
+            <tr>
+              <th rowspan="8">グリーン系</th>
+              <th>マンゴーグリーン</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f5">エレファントマンゴー</a></td>
+            </tr>
+            <tr>
+              <th>イルカグリーン</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f22">イルカキューリ</a></td>
+            </tr>
+            <tr>
+              <th>時計グリーン</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f28">時計パイン</a></td>
+            </tr>
+            <tr>
+              <th>スイカグリーン</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f24">ウリぼうスイカ</a></td>
+            </tr>
+            <tr>
+              <th>レタスグリーン</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f21">アルマジロキャベツ</a></td>
+            </tr>
+            <tr>
+              <th>キャベツグリーン</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f23">ハリネズミレタス</a></td>
+            </tr>
+            <tr>
+              <th>ビターグリーン</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f20">ロケットパパイヤ</a>・<a href="/lom/orchard/fruits/#f25">ダイヤローレル</a></td>
+            </tr>
+            <tr>
+              <th>ミントグリーン</th>
+              <td class="wrap"><a href="/lom/orchard/fruits/#f26">ハートミント</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">
+        <ul>
+          <li><strong>ノーマル系</strong>　ノーマルは初期カラー（ペイントしていないボディの色）</li>
+          <li><strong>グリーン系</strong>　レタスグリーンはアルマジロキャベツ、キャベツグリーンはハリネズミレタスで着色する（名前と果実が入れ違って見えるがこれで正しい）</li>
+        </ul>
+        <p><strong>レタスグリーン</strong>に使うのは<a href="/lom/orchard/fruits/#f21">アルマジロキャベツ</a>、<strong>キャベツグリーン</strong>に使うのは<a href="/lom/orchard/fruits/#f23">ハリネズミレタス</a>です。名前と果実が入れ違って見えますが、この組み合わせで合っています。</p>
+      </div>
+      <p>果実の入手方法とランクは<a href="/lom/orchard/fruits/">果実</a>、育てかたは<a href="/lom/orchard/">果樹園</a>にあります。</p>
+
+      <h2>ボディ作りのコツ</h2>
+      <ul>
+        <li><strong>武器は攻撃力が高いものを選ぶ</strong>　武器の攻撃力は HP と攻撃力の両方に効くので、ここがゴーレムの強さを大きく左右する</li>
+        <li><strong>防具はバランスよく</strong>　防具の数でボードの大きさと故障率が決まり、防御力の合計は HP にも効く</li>
+        <li><strong>武具作成室を活用する</strong>　材料にちょうどよい武器・防具が無いときは、自分で作るほうが早い</li>
+      </ul>
+
+      <h3>作り直して強くする</h3>
+      <ul>
+        <li><strong>ボードの大きさを調節する</strong>　材料に使う防具の数で、ボードの大きさと故障率が決まる</li>
+        <li><strong>最強のボディを作る</strong>　武器は攻撃力200以上・全属性レベル9以上・すべての付加属性、防具はすべての防御力99・全属性レベル9以上・すべての属性耐性とステータス異常耐性・能力値ボーナスの合計＋16以上。これを満たす材料をそろえるのは難しい</li>
+      </ul>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/lom/golem/">ゴーレム製作</a></li>
+          <li><a href="/lom/golem/basics/">ゴーレムの基本</a></li>
+          <li><a href="/lom/golem/blocks/">ロジックブロック</a></li>
+          <li><a href="/lom/golem/logic/">ロジックの構築と改良</a></li>
+          <li><a href="/lom/equipment/crafting/">武具作成の基本</a></li>
+          <li><a href="/lom/equipment/remodel/">改造のしくみ</a></li>
+          <li><a href="/lom/orchard/fruits/">果実</a></li>
+          <li><a href="/lom/battle/sync/">シンクロ</a></li>
+          <li><a href="/lom/lands/home/">マイホーム</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/lom/">トップ</a>
+        <a href="/lom/about/">このWikiについて</a>
+        <a href="/lom/privacy/">プライバシーポリシー</a>
+        <a href="/lom/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 聖剣伝説 Legend of Mana 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/lom/js/main.js?v=1e346c8a"></script>
+</body>
+</html>

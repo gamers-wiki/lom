@@ -1038,3 +1038,29 @@ table { border-collapse: collapse; }
 /* ===== 果実の一覧 ===== */
 /* 特徴の欄が細くなると行だけが高くなるので、下限を決めて横に伸ばす */
 .fruit-table td.facts { min-width: 16em; }
+
+/* ===== ゴーレム：ロジックブロック ===== */
+/* 形状の図。■と・を行ごとに並べて形を見せる */
+.shape-grid { margin: 0; font-family: var(--font-body); font-size: 13px; line-height: 1.15; }
+
+/* 全種リスト。作成組み合わせと内容の欄が細くなると行だけが高くなるので、下限を決めて横に伸ばす */
+.block-table td.materials { min-width: 13em; }
+.block-table td.facts { min-width: 17em; }
+
+/* 作成早見表は大きいので、字を詰めて左端の系統名を横スクロールしても残す */
+.chart-table th, .chart-table td { padding: 2px 5px; font-size: 11px; line-height: 1.35; }
+.chart-table thead th, .chart-table tbody td { white-space: normal; }
+.chart-table thead th, .chart-table td { min-width: 5.2em; }
+.chart-table tbody th { position: sticky; left: 0; z-index: 1; background: var(--mist); }
+.chart-table thead th:first-child { position: sticky; left: 0; z-index: 2; background: var(--ink); }
+/* 罫線の帯は下の文字が透けるので、左右へはみ出す下敷きでふたをする */
+.chart-table th:first-child::before {
+  content: ""; position: absolute; top: 0; bottom: 0; left: -3px; right: -4px; z-index: -1;
+  background: inherit; border-right: 1px solid var(--foam);
+}
+/* 横に送ると、固定した系統名の右で中身が切れる。そこが境目だと分かるように影を落とす */
+.chart-table th:first-child::after {
+  content: ""; position: absolute; top: 0; bottom: 0; left: 100%; width: 4px; z-index: 3;
+  background: inherit; box-shadow: 3px 0 4px -2px rgb(0 0 0 / 28%);
+}
+.chart-table td.none { text-align: center; color: var(--text-sub); }
