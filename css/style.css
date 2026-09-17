@@ -893,7 +893,9 @@ table { border-collapse: collapse; }
 .search-status { color: var(--text-sub); font-size: 13.5px; }
 
 .form-embed { border: 1px solid var(--foam); border-radius: var(--radius); overflow: hidden; background: var(--white); }
-.form-embed iframe { display: block; width: 100%; min-height: 1340px; border: 0; }
+/* お問い合わせフォームの埋め込み。高さは3サイトで同じ値にそろえてある。
+   質問が増えたら測り直す */
+.form-embed iframe { display: block; width: 100%; min-height: 1620px; border: 0; }
 .form-msg {
   border: 1px solid;
   border-radius: var(--radius);
@@ -1013,7 +1015,7 @@ table { border-collapse: collapse; }
     padding: 16px;
   }
   .p-box__body { text-align: center; }
-  .form-embed iframe { min-height: 1600px; }
+  .form-embed iframe { min-height: 1780px; }
 }
 
 /* ===== アビリティ・データ表 ===== */
