@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バトルの基本 - 聖剣伝説 Legend of Mana 攻略Wiki</title>
+  <meta name="description" content="聖剣伝説 Legend of Mana のバトルの基本。エンカウントから確認画面までの流れ、アタックゲージと HP バーの見かた、武器・防具・楽器の装備数と武器系統ごとの移動速度、戦利品の拾いかた、全滅したときの扱い。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/lom/battle/basics/">
+
+  <meta property="og:site_name" content="聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="バトルの基本 - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:description" content="聖剣伝説 Legend of Mana のバトルの基本。エンカウントから確認画面までの流れ、アタックゲージと HP バーの見かた、武器・防具・楽器の装備数と武器系統ごとの移動速度、戦利品の拾いかた、全滅したときの扱い。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/lom/battle/basics/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="バトルの基本 - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta name="twitter:description" content="聖剣伝説 Legend of Mana のバトルの基本。エンカウントから確認画面までの流れ、アタックゲージと HP バーの見かた、武器・防具・楽器の装備数と武器系統ごとの移動速度、戦利品の拾いかた、全滅したときの扱い。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+
+  <link rel="icon" href="/lom/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/lom/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/lom/apple-touch-icon.png">
+  <meta name="theme-color" content="#1f3d2b">
+
+  <link rel="stylesheet" href="/lom/css/style.css?v=27afd877">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/lom/"},{"@type":"ListItem","position":2,"name":"バトル・必殺技","item":"https://gamers-wiki.github.io/lom/battle/"},{"@type":"ListItem","position":3,"name":"バトルの基本","item":"https://gamers-wiki.github.io/lom/battle/basics/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/lom/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">❀</span>
+        <span class="logo-text">
+          <span class="logo-title">LEGEND OF MANA</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/lom/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：エスカデ、ニキータ、果樹園）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/story/">イベント攻略</a></li>
+      <li><a href="/lom/artifacts/">アーティファクト</a></li>
+      <li><a href="/lom/lands/">ランド</a></li>
+      <li><a href="/lom/characters/">キャラクター</a></li>
+      <li><a href="/lom/battle/" class="current">バトル・必殺技</a></li>
+      <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+      <li><a href="/lom/items/">アイテム</a></li>
+      <li><a href="/lom/orchard/">果樹園</a></li>
+      <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+      <li><a href="/lom/golem/">ゴーレム</a></li>
+      <li><a href="/lom/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/lom/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/battle/">バトル・必殺技</a></li>
+      <li>バトルの基本</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/story/">イベント攻略（全68イベント）</a></li>
+          <li><a href="/lom/artifacts/">アーティファクト・ランドメイク</a></li>
+          <li><a href="/lom/lands/">ランド（全27＋1）</a></li>
+          <li><a href="/lom/characters/">キャラクター</a></li>
+          <li><a href="/lom/battle/">バトル・必殺技</a></li>
+          <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+          <li><a href="/lom/items/">アイテム</a></li>
+          <li><a href="/lom/orchard/">果樹園</a></li>
+          <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+          <li><a href="/lom/golem/">ゴーレム製作</a></li>
+          <li><a href="/lom/extra/">やり込み・シークレット</a></li>
+          <li><a href="/lom/column/">世界設定・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">3大ストーリー</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/lom/story/jewel/">宝石泥棒編</a></li>
+          <li><a href="/lom/story/escad/">エスカデ編</a></li>
+          <li><a href="/lom/story/dragon/">ドラゴンキラー編</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/lom/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/about/">このWikiについて</a></li>
+          <li><a href="/lom/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>バトルの基本 <span class="name-en">BATTLE BASICS</span></h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/lom/battle/">バトル・必殺技</a></span></div>
+      </div>
+
+      <p class="article-lead">ランドを歩いていて決まったエリアに入ると、その場でバトルがはじまります。ここではバトルがはじまってから確認画面が出るまでの流れと、画面上部に出る数値の見かた、装備の決まりをまとめています。</p>
+
+      <ul class="monster-nav">
+        <li><a href="/lom/battle/">バトル・必殺技の入口</a></li>
+        <li><a href="/lom/battle/stats/">能力値</a></li>
+        <li><a href="/lom/battle/attacks/">通常攻撃と大技・連続攻撃</a></li>
+        <li><a href="/lom/battle/specials/">必殺技の覚え方</a></li>
+      </ul>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>バトルが始まるまで</h2>
+      <p>モンスターはランドのさまざまな場所に生息していて、<strong>出現エリアはマップごとに決まっています</strong>。そのエリアに踏みこむとモンスターに遭遇し（エンカウント）、バトルがはじまります。エリアによっては、エンカウントする前からモンスターの姿が見えていることもあります。</p>
+      <div class="warning">
+        <p><strong>エンカウントは基本的に回避できません。また、はじまったバトルから逃げることもできません。</strong>出たモンスターをすべて倒すまで、そのバトルは終わりません。</p>
+      </div>
+      <p>バトルは次の 4 段階で進みます。</p>
+      <ol>
+        <li><strong>エンカウント</strong> … モンスターの出現エリアに踏みこむと、バトルがはじまります。</li>
+        <li><strong>バトル</strong> … そのバトルに出たモンスターをすべて倒すと勝利です。</li>
+        <li><strong>戦利品回収</strong> … 倒した場所に落ちたジェムやお宝を拾います。</li>
+        <li><strong>確認画面表示</strong> … 手に入れたものが並び、ここでバトルが終わります。</li>
+      </ol>
+      <p>どのモンスターがどのランドに出るかは<a href="/lom/monsters/">モンスター・ペット</a>の系統別のページに、強さの決まりかたは<a href="/lom/monsters/system/">モンスターのしくみと戦術</a>にまとめています。</p>
+
+      <h2>画面の見かた</h2>
+      <p>バトルがはじまると同時に、画面上部にパーティー全員のパラメータが表示されます。中身は次の 4 つです。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>表示</th><th>意味</th></tr></thead>
+          <tbody>
+            <tr><td>顔グラフィック</td><td>その表示がどのキャラクターのものかを示します。ゴーレムだけは、ボディカラーを塗り替えるとこの絵の色も変わります。</td></tr>
+            <tr><td>シンクロエネルギージェム</td><td>シンクロが成立しているかどうかを示すマークです。</td></tr>
+            <tr><td>アタックゲージ</td><td>たまった量を表すゲージです。満タンになると必殺技が使えます。</td></tr>
+            <tr><td>HP バー＆パーセント表示</td><td>バーは残り HP の実数値、パーセントは最大 HP に対する残りの割合です。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>シンクロについては<a href="/lom/battle/sync/">シンクロ</a>のページを見てください。</p>
+
+      <h3>アタックゲージ</h3>
+      <p>アタックゲージは<strong>16 ポイントたまると満タンになり、必殺技が使えるようになります</strong>。おもにモンスターを攻撃することでたまり、たまる量は動作によって違います。通常攻撃と大技は 1 回あたり 1〜2 ポイントなので、満タンまでには 8〜16 回ぶんが要ります（動作ごとの数値は<a href="/lom/battle/attacks/">通常攻撃と大技・連続攻撃</a>）。</p>
+      <p>たまった量は、次のいずれかでゼロに戻ります。</p>
+      <ul>
+        <li>必殺技を使う</li>
+        <li>ランドから出る</li>
+        <li>モンスターの特定の攻撃を受ける</li>
+      </ul>
+      <p>ゼロに戻す攻撃は 10 種あります。どのモンスターが使うかは<a href="/lom/monsters/attacks/">敵の攻撃リスト</a>と<a href="/lom/monsters/system/">モンスターのしくみと戦術</a>にまとめています。</p>
+      <div class="note">
+        <p><strong>ペットにはアタックゲージがありません。</strong>また、魔法を使うときはマジックゲージに変わり、ゴーレムはアタックゲージの役割そのものが違います。</p>
+      </div>
+
+      <h3>HP バーと自動回復</h3>
+      <p>主人公たちの HP バーは、<strong>バー 1 本につき HP 100</strong> を表します。</p>
+      <p>HP は敵の攻撃を受けたときなどに減りますが、<strong>動かずに立ち止まっていると自動的に回復します</strong>。一定時間が経つたびに 1 ずつ戻り、その間隔は能力値の体力が高いほど短くなります。</p>
+      <div class="note">
+        <p><strong>HP が 1 回復する間隔（秒）＝（100 － 体力）÷ 120</strong></p>
+      </div>
+      <p>アビリティの<a href="/lom/battle/abilities/#a5">しゃがむ</a>を使っているあいだは、この間隔が半分になります。体力の上げかたは<a href="/lom/battle/stats/">能力値</a>にまとめています。</p>
+
+      <h3>モンスター側の HP バー</h3>
+      <p>ザコモンスターにダメージを与えると、そのモンスターの近くに残り HP を示すバーが一瞬だけ表示されます。ボスモンスターとのバトルでは、戦況に関係なく画面下部に巨大なバーが出たままになります。表す量が違うので、見かたも変わります。</p>
+      <ul>
+        <li><strong>HP バー（小）</strong> … バー 1 本につき HP 100。主人公たちのバーと同じです</li>
+        <li><strong>HP バー（大）</strong> … バー 1 本につき HP 400</li>
+      </ul>
+      <p>1 本で表せる量を超えたときは、バーの色が変わっていきます。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>HP バー（小）</th><th>バーの色</th><th>HP バー（大）</th></tr></thead>
+          <tbody>
+            <tr><td>1〜100</td><td>橙</td><td>1〜400</td></tr>
+            <tr><td>101〜200</td><td>黄</td><td>401〜800</td></tr>
+            <tr><td>201〜300</td><td>緑</td><td>801〜1200</td></tr>
+            <tr><td>301〜400</td><td>青</td><td>1201〜1600</td></tr>
+            <tr><td>401〜500</td><td>緑</td><td>1601〜2000</td></tr>
+            <tr><td>501〜600</td><td>青</td><td>2001〜2400</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>これより HP が多い場合は、緑と青がくり返されます。</p>
+      <div class="tip">
+        <p>色が橙から変わっているうちは、バー 1 本ぶん（小なら HP 100、大なら HP 400）より多く残っているということです。モンスターのレベルそのものは、<strong>バトル中にポーズをかける</strong>と確認できます（<a href="/lom/monsters/system/">モンスターのしくみと戦術</a>）。</p>
+      </div>
+
+      <h2>装備</h2>
+      <p>装備品を持つのは<strong>主人公と NPC</strong>で、ペットとゴーレムは装備しません（NPC には例外もあります）。装備品はバトルでの攻撃力や防御力を決める要素で、<strong>自由に変えられるのは主人公の装備だけ</strong>です。品物そのものは<a href="/lom/equipment/">武器・防具・楽器</a>にまとめています。</p>
+
+      <h3>種類と、同時に装備できる数</h3>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>種類</th><th>働き</th><th>同時に装備</th><th>系統</th></tr></thead>
+          <tbody>
+            <tr><td>武器</td><td>相手を物理的に攻撃します</td><td>1 つ</td><td>短剣、片手剣、片手斧、大剣、バトルアックス、バトルハンマー、槍、ロッド、グラブ、ヌンチャク、弓</td></tr>
+            <tr><td>防具</td><td>受けるダメージを軽くします</td><td>3 つまで</td><td>シールド、ヘルム、ハット、アーマー、ローブ、グローブ、リング、ブーツ、サンダル、フルメイル、マント、ペンダント</td></tr>
+            <tr><td>楽器</td><td>魔法を使うために要ります</td><td>4 つまで</td><td>ハープ、マリンバ、フルート、ドラム</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>武器には片手用と両手用があり、<strong>片手用の武器を装備したときだけ、同時に盾を装備できます</strong>。楽器は魔法を使うために要るもので、詳しくは<a href="/lom/battle/magic/">魔法</a>を見てください。</p>
+      <div class="note">
+        <p>主人公はゲーム開始時から、<strong>初期装備選択画面で選んだ系統の武器</strong>と<strong>ブロンズアーマー</strong>を装備しています。<strong>楽器は開始時には持っていない</strong>ので、お店で買うなどして手に入れる必要があります。</p>
+      </div>
+
+      <h3>武器系統と移動速度</h3>
+      <p>武器は 11 の系統に分かれます。系統によって変わるのは攻撃能力だけではありません。<strong>バトル中の移動速度</strong>と、<strong>レベルアップ時の能力値の上昇量</strong>も系統で決まります。移動速度は上下方向と左右方向で、それぞれ 4 段階です。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>武器系統</th><th>持ちかた</th><th>上下</th><th>左右</th><th>特徴</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><a href="/lom/battle/dagger/">短剣</a></td>
+              <td>両手用</td>
+              <td>★★★★</td>
+              <td>★★★★</td>
+              <td class="wrap">片刃・両刃など種類のある短刀で、同じものを片手に 1 本ずつ持ちます。リーチは短いかわりに、移動速度が 11 系統でもっとも速くなっています。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/sword/">片手剣</a></td>
+              <td>片手用</td>
+              <td>★★★☆</td>
+              <td>★★★☆</td>
+              <td class="wrap">両刃の直刀である長剣が多く、リーチも移動速度も 11 系統の真ん中あたりです。クセが無く、扱いやすい系統です。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/axe/">片手斧</a></td>
+              <td>片手用</td>
+              <td>★★★☆</td>
+              <td>★★☆☆</td>
+              <td class="wrap">打ちつけて斬ることを目的にした片刃の斧です。振る速さは片手剣と変わりませんが、左右の移動だけがやや鈍くなります。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/greatsword/">大剣</a></td>
+              <td>両手用</td>
+              <td>★★☆☆</td>
+              <td>★★☆☆</td>
+              <td class="wrap">振りまわして打ちこむ巨大な剣です。リーチは片手剣より長いかわりに、振る速さも移動速度も片手剣におとります。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/battleaxe/">バトルアックス</a></td>
+              <td>両手用</td>
+              <td>★☆☆☆</td>
+              <td>★★☆☆</td>
+              <td class="wrap">巨大な斧頭で打ち斬る大斧です。振る速さは大剣と変わりませんが、移動速度は大剣よりさらに鈍くなります。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/hammer/">バトルハンマー</a></td>
+              <td>両手用</td>
+              <td>★☆☆☆</td>
+              <td>★☆☆☆</td>
+              <td class="wrap">硬く重い頭部でなぐる、戦闘用の槌です。攻撃力の高いものが多いかわりに、振る速さも移動速度も非常に鈍くなっています。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/spear/">槍</a></td>
+              <td>両手用</td>
+              <td>★☆☆☆</td>
+              <td>★★☆☆</td>
+              <td class="wrap">長い柄の先に付いた穂先で突きます。リーチは長いものの、移動速度はバトルアックスと同じです。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/rod/">ロッド</a></td>
+              <td>両手用</td>
+              <td>★★☆☆</td>
+              <td>★★★☆</td>
+              <td class="wrap">打ちつけたり突いたりして使う、長い竿状の棒です。リーチは槍と同じで、移動速度は片手用の武器に近い速さがあります。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/glove/">グラブ</a></td>
+              <td>両手用</td>
+              <td>★★★☆</td>
+              <td>★★★★</td>
+              <td class="wrap">両手にはめて拳を強化する武器です。リーチは 11 系統で最短ですが、そのぶんを移動速度の速さで補えます。「すで」のときも、グラブを装備しているものとして扱われます。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/nunchaku/">ヌンチャク</a></td>
+              <td>両手用</td>
+              <td>★★★★</td>
+              <td>★★★☆</td>
+              <td class="wrap">短い棍を 2 本つないだ武器を、片手にひとつずつ持ちます。ほとんどの攻撃が、左右の連撃でひとまとまりになっています。</td>
+            </tr>
+            <tr>
+              <td><a href="/lom/battle/bow/">弓</a></td>
+              <td>両手用</td>
+              <td>★★☆☆</td>
+              <td>★★★☆</td>
+              <td class="wrap">遠方から矢を放ちます。射程はほぼ無限で、1 回の攻撃が複数の相手に当たります。弓そのもので直接なぐることもできます。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>NPC の移動速度は装備に関係なく、キャラクターごとに固定</strong>です。各系統の名前から、その系統で覚えられる必殺技のページへ移れます。攻撃そのものの性能は<a href="/lom/battle/attacks/">通常攻撃と大技・連続攻撃</a>、能力値の上昇量は<a href="/lom/battle/stats/">能力値</a>にまとめています。</p>
+
+      <h2>バトルの終わり</h2>
+
+      <h3>勝ったとき</h3>
+      <p>モンスターは HP をゼロにすれば倒せます。<strong>そのバトルのモンスターをすべて倒すと勝利で、こちらの HP は最大値まで回復します</strong>。</p>
+
+      <h3>戦利品を拾う</h3>
+      <p>ほとんどのモンスターは、倒すとその場に戦利品を落とします。<strong>戦利品は一定時間が経つと消える</strong>ので、その場で拾ってください。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>戦利品</th><th>効果</th></tr></thead>
+          <tbody>
+            <tr><td>ジェム</td><td>拾ったキャラクターが経験値を得ます。</td></tr>
+            <tr><td>ジェム（大）</td><td>経験値の量は、ジェム 1 個の 10 倍です。</td></tr>
+            <tr><td>ルク</td><td>ファ・ディールの通貨です。ひとつ 10 ルク。</td></tr>
+            <tr><td>ルク（大）</td><td>ひとつ 50 ルク。</td></tr>
+            <tr><td>まんまるドロップ</td><td>紙包みのアメです。取るとその場で HP が最大値の 25% 回復します。</td></tr>
+            <tr><td>ぱっくんチョコ</td><td>銀紙包みのチョコレートです。取るとその場で HP が最大値の 50% 回復します。</td></tr>
+            <tr><td>お宝</td><td>アイテムの入った袋です。中身はバトルが終わるまでわかりません。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>誰が拾うかで扱いが変わります。</p>
+      <ul>
+        <li><strong>ルクとお宝</strong> … 誰が拾っても主人公のものになります</li>
+        <li><strong>それ以外</strong> … 拾った当人にだけ効果があります。NPC やペットがジェムを拾った場合は、そのキャラクターが経験値を得たことになります</li>
+      </ul>
+      <p>何が落ちるかはモンスターごとに決まっていて、倒したモンスターの基本レベルとトドメを刺したキャラクターの運でも変わります。決まりかたとレアなアイテムの狙いかたは<a href="/lom/monsters/system/">モンスターのしくみと戦術</a>の「戦利品」に、ジェム 1 個で得られる経験値の量は同じページの「経験値」にまとめています。</p>
+
+      <h3>確認画面</h3>
+      <p>確認画面が出る条件は 2 つで、<strong>すべてのモンスターを倒すこと</strong>と、<strong>戦利品が画面上からなくなること</strong>です。両方を満たすと、そのバトルで得たものをまとめた画面が表示されます。ここでわかるのは次の 3 つです。</p>
+      <ul>
+        <li>入手したアイテム</li>
+        <li>マスターしたアビリティと必殺技</li>
+        <li>パーティーが獲得したお金と経験値</li>
+      </ul>
+      <p><strong>確認画面が表示された時点でバトルは終了です。</strong>拾わないまま戦利品が消えても条件は満たされますが、そのぶんは手に入りません。</p>
+
+      <h3>全滅したとき</h3>
+      <p>主人公と仲間全員の HP がゼロになると、コンティニュー画面が表示されます。コンティニューを選ぶと、<strong>そのマップに入った直後の状態</strong>からゲームが再開します。</p>
+      <div class="warning">
+        <p><strong>そのマップ内のバトルで得た経験値やアイテムは失われます。</strong>戻されるのはマップに入った時点なので、そこから先で倒したぶんはまとめて無くなります。</p>
+      </div>
+      <p>再開したときは、<strong>こちらのパーティー全員のアタックゲージが満タン</strong>になっています。仕切り直しの 1 戦目から必殺技を撃てます。</p>
+
+      <h2>バトル・必殺技のページ</h2>
+      <ul>
+        <li><a href="/lom/battle/stats/">能力値</a> … 力・技・防御などが何に効くか、能力値変化</li>
+        <li><a href="/lom/battle/damage/">ダメージと属性・状態異常</a> … 属性、攻撃形態と攻撃種別、状態異常</li>
+        <li><a href="/lom/battle/attacks/">通常攻撃と大技・連続攻撃</a> … 入力と、武器系統ごとの性能</li>
+        <li><a href="/lom/battle/sync/">シンクロ</a> … ペットやゴーレムと一緒に戦うと起きること</li>
+        <li><a href="/lom/battle/abilities/">アビリティ</a> … 初期・修得アビリティと専用技</li>
+        <li><a href="/lom/battle/specials/">必殺技の覚え方</a> … アタックゲージ、マスターの条件、共通技</li>
+        <li><a href="/lom/battle/magic/">魔法</a> … 軌道とロック、追加効果の決まりかた、属性ごとの魔法</li>
+      </ul>
+      <p>武器系統ごとの必殺技は、上の「武器系統と移動速度」の表にある系統名から開けます。</p>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/lom/battle/">バトル・必殺技</a></li>
+          <li><a href="/lom/monsters/system/">モンスターのしくみと戦術</a></li>
+          <li><a href="/lom/monsters/attacks/">敵の攻撃リスト</a></li>
+          <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+          <li><a href="/lom/golem/">ゴーレム</a></li>
+          <li><a href="/lom/lands/">ランド</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/lom/">トップ</a>
+        <a href="/lom/about/">このWikiについて</a>
+        <a href="/lom/privacy/">プライバシーポリシー</a>
+        <a href="/lom/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 聖剣伝説 Legend of Mana 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/lom/js/main.js?v=1e346c8a"></script>
+</body>
+</html>

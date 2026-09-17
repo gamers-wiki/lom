@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>シンクロ - 聖剣伝説 Legend of Mana 攻略Wiki</title>
+  <meta name="description" content="聖剣伝説 Legend of Mana のシンクロ。仲間やペットに近づくと成立するしくみ、ふたりと3人での効果の数、シンクロ中しか働かない決まりと能力値変化の例外、全66種類の効果の内容、ペットとゴーレムでの使い分け。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/lom/battle/sync/">
+
+  <meta property="og:site_name" content="聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="シンクロ - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:description" content="聖剣伝説 Legend of Mana のシンクロ。仲間やペットに近づくと成立するしくみ、ふたりと3人での効果の数、シンクロ中しか働かない決まりと能力値変化の例外、全66種類の効果の内容、ペットとゴーレムでの使い分け。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/lom/battle/sync/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="シンクロ - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta name="twitter:description" content="聖剣伝説 Legend of Mana のシンクロ。仲間やペットに近づくと成立するしくみ、ふたりと3人での効果の数、シンクロ中しか働かない決まりと能力値変化の例外、全66種類の効果の内容、ペットとゴーレムでの使い分け。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+
+  <link rel="icon" href="/lom/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/lom/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/lom/apple-touch-icon.png">
+  <meta name="theme-color" content="#1f3d2b">
+
+  <link rel="stylesheet" href="/lom/css/style.css?v=27afd877">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/lom/"},{"@type":"ListItem","position":2,"name":"バトル・必殺技","item":"https://gamers-wiki.github.io/lom/battle/"},{"@type":"ListItem","position":3,"name":"シンクロ","item":"https://gamers-wiki.github.io/lom/battle/sync/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/lom/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">❀</span>
+        <span class="logo-text">
+          <span class="logo-title">LEGEND OF MANA</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/lom/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：エスカデ、ニキータ、果樹園）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/story/">イベント攻略</a></li>
+      <li><a href="/lom/artifacts/">アーティファクト</a></li>
+      <li><a href="/lom/lands/">ランド</a></li>
+      <li><a href="/lom/characters/">キャラクター</a></li>
+      <li><a href="/lom/battle/" class="current">バトル・必殺技</a></li>
+      <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+      <li><a href="/lom/items/">アイテム</a></li>
+      <li><a href="/lom/orchard/">果樹園</a></li>
+      <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+      <li><a href="/lom/golem/">ゴーレム</a></li>
+      <li><a href="/lom/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/lom/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/battle/">バトル・必殺技</a></li>
+      <li>シンクロ</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/story/">イベント攻略（全68イベント）</a></li>
+          <li><a href="/lom/artifacts/">アーティファクト・ランドメイク</a></li>
+          <li><a href="/lom/lands/">ランド（全27＋1）</a></li>
+          <li><a href="/lom/characters/">キャラクター</a></li>
+          <li><a href="/lom/battle/">バトル・必殺技</a></li>
+          <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+          <li><a href="/lom/items/">アイテム</a></li>
+          <li><a href="/lom/orchard/">果樹園</a></li>
+          <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+          <li><a href="/lom/golem/">ゴーレム製作</a></li>
+          <li><a href="/lom/extra/">やり込み・シークレット</a></li>
+          <li><a href="/lom/column/">世界設定・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">3大ストーリー</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/lom/story/jewel/">宝石泥棒編</a></li>
+          <li><a href="/lom/story/escad/">エスカデ編</a></li>
+          <li><a href="/lom/story/dragon/">ドラゴンキラー編</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/lom/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/about/">このWikiについて</a></li>
+          <li><a href="/lom/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>シンクロ <span class="name-en">SYNCHRO</span></h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/lom/battle/">バトル・必殺技</a></span><span>全66種類</span></div>
+      </div>
+
+      <p class="article-lead">シンクロは、バトル中にパーティーのメンバー同士が近づくと働く効果です。攻撃力が上がるもの、受けるダメージが減るもの、戦利品が増えるものなど 66 種類があり、どれを使えるかは連れているペット・ゴーレム・仲間キャラクターで決まります。ここではシンクロが成立する条件と、効果の種類をまとめています。</p>
+
+      <ul class="monster-nav">
+        <li><a href="/lom/battle/">バトル・必殺技の入口</a></li>
+        <li><a href="/lom/monsters/pet-data/">ペットの種族別データ</a></li>
+        <li><a href="/lom/monsters/pet-basics/">ペットの基本</a></li>
+      </ul>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>シンクロとは</h2>
+      <p>バトル中にパーティーメンバーのうちふたり以上が接近すると、<strong>シンクロ状態</strong>になります。成立するのは<strong>戦闘不能ではない仲間</strong>とだけで、倒れている仲間とはシンクロしません。</p>
+      <p>シンクロ状態になると、<strong>自分の効果が相手に、相手の効果が自分に発生します</strong>。どの効果を持つかはキャラクターごとに決まっていて、あとから変えることはできません。ペットの場合は、レベルを上げても変わりません。</p>
+      <p>シンクロ中は、お互いの<strong>シンクロエネルギージェム</strong>のあいだに電流のようなものが流れます。効いているかどうかは画面で分かります。</p>
+      <div class="note">
+        <p>主人公自身も効果を持っています。<strong>HP回復量UP</strong>で、HP が自動回復するときの回復量が 1 増えるというものです。近づいた相手には、こちらからこの効果が渡ります。</p>
+      </div>
+
+      <h3>ふたりでシンクロ</h3>
+      <p>1 対 1 のシンクロでは、互いに自分の持つ効果を相手に与え合います。得られる効果は 1 人につき 1 種類です。</p>
+      <p>シンクロするのは主人公と仲間の組み合わせだけではありません。<strong>主人公以外の仲間同士でもシンクロ状態になります</strong>。</p>
+
+      <h3>3 人でシンクロ</h3>
+      <p>3 人が同時にシンクロした場合、効果はそれぞれ<strong>自分以外のふたり</strong>に発生します。つまり、ひとりあたり <strong>2 種類</strong>のシンクロ効果が得られます。</p>
+      <div class="tip">
+        <p>効果を 2 種類ずつ受けたいときは、パーティーを 3 人にして固まって戦います。攻撃ボーナスと防御ボーナスのように、向きの違う効果を重ねられます。</p>
+      </div>
+
+      <h2>効果が出るのはシンクロ中だけ</h2>
+      <p>シンクロの効果は、基本的に<strong>シンクロ中に起きた現象や行動に対してしか現れません</strong>。離れているあいだに起きたことには働きません。</p>
+      <div class="warning">
+        <p>たとえば「高速回復」は、その効果を持つキャラクターとシンクロ状態のときに戦闘不能にならなければ発生しません。あらかじめ近づいておいても、離れてから倒れたのでは効きません。</p>
+      </div>
+
+      <h3>能力値変化系だけは例外</h3>
+      <p>能力値変化系の効果は、シンクロが切れてもすぐにはもとの値にもどりません。<strong>増加した数値が少しずつ減少していきます</strong>。</p>
+      <div class="tip">
+        <p>この性質があるので、能力値変化系は<strong>動き出す前に近づいて上げておく</strong>と、離れたあとしばらくは高いままで戦えます。ほかの区分の効果は、その場で近くにいなければ働きません。</p>
+      </div>
+      <p>能力値そのものの意味は<a href="/lom/battle/stats/">能力値</a>にあります。</p>
+
+      <h2>効果の種類</h2>
+      <p>シンクロは全部で 66 種類あります。効果の性質で 8 つに分けられます。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>区分</th><th>種類数</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>特殊</th>
+              <td>14</td>
+              <td class="wrap">回復・戦利品・アタックゲージなど、ほかの区分に当てはまらない効果が集まっています。1 種類ずつ内容が違います。</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス（攻撃の種別・形態）</th>
+              <td>4</td>
+              <td class="wrap">こちらが出す攻撃のうち、該当する攻撃種別・攻撃形態のものだけ攻撃力が上がります。相手を選ばずに働きます。</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス（系統）</th>
+              <td>11</td>
+              <td class="wrap">該当する系統のモンスターに対してだけ攻撃力が上がります。出てくる相手に合わせて選ぶ効果です。</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス（系統）</th>
+              <td>11</td>
+              <td class="wrap">該当する系統のモンスターから受けるダメージが減ります。</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス（攻撃の形態）</th>
+              <td>3</td>
+              <td class="wrap">相手の攻撃形態が凝視・音波・ブレスのときだけ、受けるダメージが減ります。</td>
+            </tr>
+            <tr>
+              <th>付加効果</th>
+              <td>8</td>
+              <td class="wrap">シンクロ中、こちらの攻撃に状態異常の効果がつきます。</td>
+            </tr>
+            <tr>
+              <th>状態異常耐性</th>
+              <td>8</td>
+              <td class="wrap">該当する状態異常への耐性が備わります。</td>
+            </tr>
+            <tr>
+              <th>能力値変化</th>
+              <td>7</td>
+              <td class="wrap">該当する能力値が上がります。シンクロが切れたあとの扱いだけは、ほかの区分と違います。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>下の表の「ペット以外の持ち主」は、主人公・仲間キャラクター・ゴーレムです。<strong>その効果を持つペット</strong>は<a href="/lom/monsters/pet-data/#by-sync">ペットの種族別データ</a>の「シンクロから引く」にまとめてあります。</p>
+
+      <h3>特殊</h3>
+      <p>回復・戦利品・アタックゲージなど、ほかの区分に当てはまらない効果が集まっています。1 種類ずつ内容が違います。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>名前</th><th>効果</th><th>ペット以外の持ち主</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>HP回復量UP</th>
+              <td class="wrap">HP が自動回復するときの回復量が 1 増える</td>
+              <td>主人公、エメロード、ゴーレム</td>
+            </tr>
+            <tr>
+              <th>リジェネレーション</th>
+              <td class="wrap">HP がつねに自動回復する。ただし回復の間隔は通常の 2 倍</td>
+              <td>ダナエ</td>
+            </tr>
+            <tr>
+              <th>ボーナス・ルク</th>
+              <td class="wrap">モンスターが落とすルクの数がふたつ増える</td>
+              <td>ニキータ</td>
+            </tr>
+            <tr>
+              <th>マジックウェポン</th>
+              <td class="wrap">武器による攻撃が魔法型になり、威力が 1.5 倍になる</td>
+              <td>エスカデ</td>
+            </tr>
+            <tr>
+              <th>ステータス障害全回復</th>
+              <td class="wrap">戦闘不能以外の状態異常の効果が消える</td>
+              <td>真珠姫</td>
+            </tr>
+            <tr>
+              <th>技ポイントフル</th>
+              <td class="wrap">アタックゲージがすぐに満タンになる</td>
+              <td>レディパール</td>
+            </tr>
+            <tr>
+              <th>技ポイントアップ</th>
+              <td class="wrap">アタックゲージの蓄積量が通常の 2 倍になる</td>
+              <td>瑠璃</td>
+            </tr>
+            <tr>
+              <th>レジストオールエレメント</th>
+              <td class="wrap">全属性に対する属性耐性が備わる</td>
+              <td>エレ</td>
+            </tr>
+            <tr>
+              <th>レア・トレジャー</th>
+              <td class="wrap">レアな戦利品が出やすくなる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>ドレインタッチ</th>
+              <td class="wrap">与えたダメージ量の 4 分の 1 だけ HP が回復する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>ノーダメージ</th>
+              <td class="wrap">敵からダメージを受けなくなる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>高速回復</th>
+              <td class="wrap">戦闘不能状態から約 1 秒で回復する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>ボーナス・ジェム</th>
+              <td class="wrap">モンスターが落とすジェムの数がふたつ増える</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>ぱっくんチョコ</th>
+              <td class="wrap">たまに、ぱっくんトカゲがぱっくんチョコを出す</td>
+              <td>―</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>攻撃ボーナス（攻撃の種別・形態）</h3>
+      <p>こちらが出す攻撃のうち、該当する攻撃種別・攻撃形態のものだけ攻撃力が上がります。相手を選ばずに働きます。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>名前</th><th>効果</th><th>ペット以外の持ち主</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>攻撃ボーナス：間接物理攻撃</th>
+              <td class="wrap">魔法型以外の間接形態の攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：打撃攻撃</th>
+              <td class="wrap">たたき型の攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：斬撃攻撃</th>
+              <td class="wrap">斬り型の攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：突き攻撃</th>
+              <td class="wrap">突き型の攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>攻撃ボーナス（系統）</h3>
+      <p>該当する系統のモンスターに対してだけ攻撃力が上がります。出てくる相手に合わせて選ぶ効果です。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>名前</th><th>効果</th><th>ペット以外の持ち主</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>攻撃ボーナス：獣系</th>
+              <td class="wrap">獣系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：植物系</th>
+              <td class="wrap">植物系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：虫系</th>
+              <td class="wrap">昆虫系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：ハ虫類系</th>
+              <td class="wrap">ハ虫類系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：水棲系</th>
+              <td class="wrap">水棲系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：鳥系</th>
+              <td class="wrap">鳥系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：不定系</th>
+              <td class="wrap">不定形系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：悪魔系</th>
+              <td class="wrap">悪魔系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：ドラゴン系</th>
+              <td class="wrap">竜系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>ラルク</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：不思議系</th>
+              <td class="wrap">不思議系のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>攻撃ボーナス：亜人種系</th>
+              <td class="wrap">亜人種のモンスターへの攻撃力が 1.5 倍になる</td>
+              <td>―</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>防御ボーナス（系統）</h3>
+      <p>該当する系統のモンスターから受けるダメージが減ります。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>名前</th><th>効果</th><th>ペット以外の持ち主</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>防御ボーナス：植物系</th>
+              <td class="wrap">植物系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：虫系</th>
+              <td class="wrap">昆虫系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：ハ虫類系</th>
+              <td class="wrap">ハ虫類系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：水棲系</th>
+              <td class="wrap">水棲系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：鳥系</th>
+              <td class="wrap">鳥系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：不定系</th>
+              <td class="wrap">不定形系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：不死系</th>
+              <td class="wrap">不死系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：悪魔系</th>
+              <td class="wrap">悪魔系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：ドラゴン系</th>
+              <td class="wrap">竜系のモンスターから受けるダメージが半減する</td>
+              <td>シエラ</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：不思議系</th>
+              <td class="wrap">不思議系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：魔法生物系</th>
+              <td class="wrap">魔法生物系のモンスターから受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>防御ボーナス（攻撃の形態）</h3>
+      <p>相手の攻撃形態が凝視・音波・ブレスのときだけ、受けるダメージが減ります。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>名前</th><th>効果</th><th>ペット以外の持ち主</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>防御ボーナス：凝視攻撃</th>
+              <td class="wrap">凝視形態の攻撃で受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：音波攻撃</th>
+              <td class="wrap">音波形態の攻撃で受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>防御ボーナス：ブレス</th>
+              <td class="wrap">ブレス形態の攻撃で受けるダメージが半減する</td>
+              <td>―</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>付加効果</h3>
+      <p>シンクロ中、こちらの攻撃に状態異常の効果がつきます。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>名前</th><th>効果</th><th>ペット以外の持ち主</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>付加効果：毒</th>
+              <td class="wrap">攻撃に毒の効果がつく</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加効果：暗闇</th>
+              <td class="wrap">攻撃に暗闇の効果がつく</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加効果：マヒ</th>
+              <td class="wrap">攻撃にマヒの効果がつく</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加効果：混乱</th>
+              <td class="wrap">攻撃に混乱の効果がつく</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加効果：炎上</th>
+              <td class="wrap">攻撃に炎上の効果がつく</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加効果：眠り</th>
+              <td class="wrap">攻撃に眠りの効果がつく</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加効果：石化</th>
+              <td class="wrap">攻撃に石化の効果がつく</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加効果：氷結</th>
+              <td class="wrap">攻撃に凍結の効果がつく</td>
+              <td>―</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>状態異常耐性</h3>
+      <p>該当する状態異常への耐性が備わります。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>名前</th><th>効果</th><th>ペット以外の持ち主</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>付加耐性：毒</th>
+              <td class="wrap">毒の効果への耐性が備わる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加耐性：暗闇</th>
+              <td class="wrap">暗闇の効果への耐性が備わる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加耐性：マヒ</th>
+              <td class="wrap">マヒの効果への耐性が備わる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加耐性：混乱</th>
+              <td class="wrap">混乱の効果への耐性が備わる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加耐性：炎上</th>
+              <td class="wrap">炎上の効果への耐性が備わる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加耐性：眠り</th>
+              <td class="wrap">眠りの効果への耐性が備わる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加耐性：石化</th>
+              <td class="wrap">石化の効果への耐性が備わる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>付加耐性：氷結</th>
+              <td class="wrap">凍結の効果への耐性が備わる</td>
+              <td>―</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>能力値変化</h3>
+      <p>該当する能力値が上がります。シンクロが切れたあとの扱いだけは、ほかの区分と違います。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>名前</th><th>効果</th><th>ペット以外の持ち主</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>ちからアップ</th>
+              <td class="wrap">力の数値が 1.25 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>わざアップ</th>
+              <td class="wrap">技の数値が 1.25 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>ぼうぎょアップ</th>
+              <td class="wrap">防御の数値が 1.25 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>まほうアップ</th>
+              <td class="wrap">魔法の数値が 1.25 倍になる</td>
+              <td>コロナ</td>
+            </tr>
+            <tr>
+              <th>たいりょくアップ</th>
+              <td class="wrap">体力の数値が 1.25 倍になる</td>
+              <td>―</td>
+            </tr>
+            <tr>
+              <th>せいしんアップ</th>
+              <td class="wrap">精神の数値が 1.25 倍になる</td>
+              <td>バド</td>
+            </tr>
+            <tr>
+              <th>うんアップ</th>
+              <td class="wrap">運の数値が 1.25 倍になる</td>
+              <td>―</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>ペットからは得られない効果</h2>
+      <p>次の 8 種類には、その効果を持つペットがいません。使いたい場合は、持ち主の仲間キャラクターをパーティーに入れる必要があります。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>名前</th><th>効果</th><th>持ち主</th></tr></thead>
+          <tbody>
+            <tr>
+              <th>リジェネレーション</th>
+              <td class="wrap">HP がつねに自動回復する。ただし回復の間隔は通常の 2 倍</td>
+              <td>ダナエ</td>
+            </tr>
+            <tr>
+              <th>ボーナス・ルク</th>
+              <td class="wrap">モンスターが落とすルクの数がふたつ増える</td>
+              <td>ニキータ</td>
+            </tr>
+            <tr>
+              <th>マジックウェポン</th>
+              <td class="wrap">武器による攻撃が魔法型になり、威力が 1.5 倍になる</td>
+              <td>エスカデ</td>
+            </tr>
+            <tr>
+              <th>技ポイントフル</th>
+              <td class="wrap">アタックゲージがすぐに満タンになる</td>
+              <td>レディパール</td>
+            </tr>
+            <tr>
+              <th>技ポイントアップ</th>
+              <td class="wrap">アタックゲージの蓄積量が通常の 2 倍になる</td>
+              <td>瑠璃</td>
+            </tr>
+            <tr>
+              <th>レジストオールエレメント</th>
+              <td class="wrap">全属性に対する属性耐性が備わる</td>
+              <td>エレ</td>
+            </tr>
+            <tr>
+              <th>まほうアップ</th>
+              <td class="wrap">魔法の数値が 1.25 倍になる</td>
+              <td>コロナ</td>
+            </tr>
+            <tr>
+              <th>せいしんアップ</th>
+              <td class="wrap">精神の数値が 1.25 倍になる</td>
+              <td>バド</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>シンクロが無いもの</h2>
+      <ul>
+        <li><strong>魅力を上げる効果はありません。</strong>能力値変化系がそろっているのは、残る 7 種類の能力値です</li>
+        <li><strong>ちびっことピヨリは、付加効果も状態異常耐性も得られません。</strong>付加効果と耐性がそろっているのは、毒・暗闇・マヒ・混乱・炎上・眠り・石化・凍結の 8 種類です</li>
+        <li>攻撃ボーナス（系統）に<strong>不死系・魔法生物系</strong>はありません</li>
+        <li>防御ボーナス（系統）に<strong>獣系・亜人種</strong>はありません</li>
+      </ul>
+      <p>ちびっことピヨリが何かは<a href="/lom/battle/damage/">ダメージと属性・状態異常</a>にあります。</p>
+      <div class="note">
+        <p>名前と、効果が対象にするものの呼びかたが違うシンクロがあります。虫系＝昆虫系、不定系＝不定形系、ドラゴン系＝竜系、亜人種系＝亜人種、氷結＝凍結です。表の「効果」欄には、ほかのページと同じ呼びかたを書いています。</p>
+      </div>
+
+      <h2>ペットとゴーレムでの使い分け</h2>
+      <p><a href="/lom/golem/">ゴーレム</a>のシンクロは<strong>HP回復量UP</strong>で、主人公と同じ効果です。1 種類しかないので、ゴーレムを連れるときに効果を選ぶことはありません。</p>
+      <p>いっぽうペットにできるモンスターは 64 種いて、<strong>種類ごとに違う効果を持っています</strong>。ここで挙げた効果のうち、ペットから得られるのは 58 種類です。次に戦う相手が分かっているなら、その系統の攻撃ボーナスや防御ボーナスを持つペットを選ぶと、効果がそのまま噛み合います。</p>
+      <p>どのペットがどの効果を持つかは<a href="/lom/monsters/pet-data/">ペットの種族別データ</a>にあります。系統ごとの性質は<a href="/lom/monsters/system/">モンスターのしくみと戦術</a>から各系統のページへたどれます。</p>
+      <div class="tip">
+        <p>シンクロは近づかなければ働きません。ペットの性格を<strong>「親密」か「寂しがり」</strong>にすると主人公に近づく確率が上がるので、効果を使いたいときはこのどちらかにしておきます。性格の決めかたは<a href="/lom/monsters/pet-basics/">ペットの基本</a>にあります。</p>
+      </div>
+      <p>戦利品を増やす効果は、拾いかたと合わせて<a href="/lom/monsters/system/">モンスターのしくみと戦術</a>の「戦利品」にまとめています。</p>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/lom/battle/">バトル・必殺技</a></li>
+          <li><a href="/lom/battle/stats/">能力値</a></li>
+          <li><a href="/lom/battle/damage/">ダメージと属性・状態異常</a></li>
+          <li><a href="/lom/monsters/pet-data/">ペットの種族別データ</a></li>
+          <li><a href="/lom/monsters/pet-basics/">ペットの基本</a></li>
+          <li><a href="/lom/monsters/attacks/">敵の攻撃リスト</a></li>
+          <li><a href="/lom/monsters/system/">モンスターのしくみと戦術</a></li>
+          <li><a href="/lom/golem/">ゴーレム製作</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/lom/">トップ</a>
+        <a href="/lom/about/">このWikiについて</a>
+        <a href="/lom/privacy/">プライバシーポリシー</a>
+        <a href="/lom/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 聖剣伝説 Legend of Mana 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/lom/js/main.js?v=1e346c8a"></script>
+</body>
+</html>
