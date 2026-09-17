@@ -211,6 +211,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://gamers-wiki.github.io/lom/items/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gamers-wiki.github.io/lom/items/materials/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gamers-wiki.github.io/lom/items/obtain/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gamers-wiki.github.io/lom/items/sub-materials/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gamers-wiki.github.io/lom/lands/</loc>
     <lastmod>2026-09-17</lastmod>
     <priority>0.8</priority>
