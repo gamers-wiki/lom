@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>モンスターのしくみと戦術 - 聖剣伝説 Legend of Mana 攻略Wiki</title>
+  <meta name="description" content="聖剣伝説 Legend of Mana のモンスターのしくみ。強化属性と弱化属性、レベルの計算式と基準値の対応表、戦利品の決まりかたとレア狙い、ジェムで得る経験値、攻撃の追加効果と敵のアクション、クイックアタックを軸にした戦いかた。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/lom/monsters/system/">
+
+  <meta property="og:site_name" content="聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="モンスターのしくみと戦術 - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:description" content="聖剣伝説 Legend of Mana のモンスターのしくみ。強化属性と弱化属性、レベルの計算式と基準値の対応表、戦利品の決まりかたとレア狙い、ジェムで得る経験値、攻撃の追加効果と敵のアクション、クイックアタックを軸にした戦いかた。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/lom/monsters/system/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="モンスターのしくみと戦術 - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta name="twitter:description" content="聖剣伝説 Legend of Mana のモンスターのしくみ。強化属性と弱化属性、レベルの計算式と基準値の対応表、戦利品の決まりかたとレア狙い、ジェムで得る経験値、攻撃の追加効果と敵のアクション、クイックアタックを軸にした戦いかた。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+
+  <link rel="icon" href="/lom/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/lom/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/lom/apple-touch-icon.png">
+  <meta name="theme-color" content="#1f3d2b">
+
+  <link rel="stylesheet" href="/lom/css/style.css?v=27afd877">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/lom/"},{"@type":"ListItem","position":2,"name":"モンスター・ペット","item":"https://gamers-wiki.github.io/lom/monsters/"},{"@type":"ListItem","position":3,"name":"モンスターのしくみと戦術","item":"https://gamers-wiki.github.io/lom/monsters/system/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/lom/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">❀</span>
+        <span class="logo-text">
+          <span class="logo-title">LEGEND OF MANA</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/lom/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：エスカデ、ニキータ、果樹園）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/story/">イベント攻略</a></li>
+      <li><a href="/lom/artifacts/">アーティファクト</a></li>
+      <li><a href="/lom/lands/">ランド</a></li>
+      <li><a href="/lom/characters/">キャラクター</a></li>
+      <li><a href="/lom/battle/">バトル・必殺技</a></li>
+      <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+      <li><a href="/lom/items/">アイテム</a></li>
+      <li><a href="/lom/orchard/">果樹園</a></li>
+      <li><a href="/lom/monsters/" class="current">モンスター・ペット</a></li>
+      <li><a href="/lom/golem/">ゴーレム</a></li>
+      <li><a href="/lom/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/lom/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+      <li>モンスターのしくみと戦術</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/story/">イベント攻略（全68イベント）</a></li>
+          <li><a href="/lom/artifacts/">アーティファクト・ランドメイク</a></li>
+          <li><a href="/lom/lands/">ランド（全27＋1）</a></li>
+          <li><a href="/lom/characters/">キャラクター</a></li>
+          <li><a href="/lom/battle/">バトルシステム・必殺技・魔法</a></li>
+          <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+          <li><a href="/lom/items/">アイテム</a></li>
+          <li><a href="/lom/orchard/">果樹園</a></li>
+          <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+          <li><a href="/lom/golem/">ゴーレム製作</a></li>
+          <li><a href="/lom/extra/">やり込み・シークレット</a></li>
+          <li><a href="/lom/column/">世界設定・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">3大ストーリー</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/lom/story/jewel/">宝石泥棒編</a></li>
+          <li><a href="/lom/story/escad/">エスカデ編</a></li>
+          <li><a href="/lom/story/dragon/">ドラゴンキラー編</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/lom/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/about/">このWikiについて</a></li>
+          <li><a href="/lom/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>モンスターのしくみと戦術 <span class="name-en">MONSTER SYSTEM</span></h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/lom/monsters/">モンスター・ペット</a></span></div>
+      </div>
+
+      <p class="article-lead">モンスターの強さは、置いたランドの場所とマナレベルで変わります。落とすアイテムも、倒したモンスターの基本レベルとトドメを刺したキャラクターの運で変わります。ここでは属性・レベル・戦利品・経験値の決まりかたと、それを踏まえた戦いかたをまとめています。</p>
+
+      <ul class="monster-nav">
+        <li><a href="/lom/monsters/">モンスター・ペットの入口</a></li>
+        <li><a href="/lom/monsters/attacks/">敵の攻撃リスト</a></li>
+      </ul>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>強化属性と弱化属性</h2>
+      <p>モンスターには、光・闇・木・金・火・土・風・水の 8 属性それぞれとの相性が設定されています。相性の良い属性を<strong>強化属性</strong>、悪い属性を<strong>弱化属性</strong>と呼びます。設定されていない属性は、どちらでもありません。</p>
+      <p>強化属性と弱化属性が影響するのは、次の 2 つです。</p>
+      <ul>
+        <li><strong>受けるダメージ量</strong> … 強化属性の攻撃を受けたときは減り、弱化属性の攻撃を受けたときは増えます</li>
+        <li><strong>モンスターのレベル</strong> … 出現するランドのマナレベルと組み合わせて決まります（下の「モンスターのレベル」）</li>
+      </ul>
+      <p>たとえばモールベアは「強化：金・土　弱化：木・火」です。木属性や火属性の武器・魔法で攻めればダメージが通りやすく、金属性や土属性で攻めると軽く受け流されます。</p>
+
+      <h3>モンスター側の属性レベル</h3>
+      <p>モンスターが属性攻撃を行ったときに与えるダメージと、強化属性の攻撃を受けたときに受けるダメージは、<strong>対応する属性のレベルが 4 の武器・防具を装備しているものとして</strong>計算されます。モンスター側の属性レベルはこの 4 で固定で、こちらの装備や強化では変わりません。</p>
+
+      <div class="note">
+        <p>ゲーム中のモンスター図鑑は、はじめて出会ったモンスターとのバトルに勝つと項目が増えます。載るのは名前と外見で、ザコと一部のボスにはバトルでの簡単な特徴も付きます。強化属性・弱化属性まで載る項目はごくわずかで、ボスは基本的に名前と外見だけです。</p>
+      </div>
+
+      <h3>系統と、系統ごとの傾向</h3>
+      <p>モンスターはボスとザコに分かれます。ザコは戦利品が 8 つの枠から選ばれるのに対し、ボスは中身が決まっています（下の「ボスの戦利品」）。ザコはさらに 13 種類の<strong>系統</strong>に分かれ、系統はおもにペットのシンクロ効果とペットの種類に関係します。</p>
+      <p>属性の相性は同じ系統でもモンスターごとに違うので、各系統のページで確かめてください。属性・出現ランド・落とすもの・使ってくる攻撃を種ごとにまとめています。</p>
+      <ul class="link-grid">
+        <li><a href="/lom/monsters/beast/">獣系</a></li>
+        <li><a href="/lom/monsters/plant/">植物系</a></li>
+        <li><a href="/lom/monsters/insect/">昆虫系</a></li>
+        <li><a href="/lom/monsters/reptile/">ハ虫類系</a></li>
+        <li><a href="/lom/monsters/aquatic/">水棲系</a></li>
+        <li><a href="/lom/monsters/bird/">鳥系</a></li>
+        <li><a href="/lom/monsters/amorphous/">不定形系</a></li>
+        <li><a href="/lom/monsters/undead/">不死系</a></li>
+        <li><a href="/lom/monsters/demon/">悪魔系</a></li>
+        <li><a href="/lom/monsters/dragon/">竜系</a></li>
+        <li><a href="/lom/monsters/mystic/">不思議系</a></li>
+        <li><a href="/lom/monsters/magical/">魔法生物系</a></li>
+        <li><a href="/lom/monsters/demihuman/">亜人種</a></li>
+      </ul>
+      <p>このほかに、イベントの中で敵として戦う<a href="/lom/monsters/human/">人間</a>がいます。13 系統には入らず、強化属性・弱化属性も持ちません。</p>
+
+      <h2>モンスターのレベル</h2>
+      <p>モンスターにもレベルがあり、値は計算式で決まります。レベルが 1 上がるごとに、<strong>HP・攻撃力・防御力・能力値</strong>が、そのモンスターに設定された成長値のぶんだけ上がります。同じ名前のモンスターでも、出会う場所によって強さがはっきり変わります。</p>
+      <p>成長値は、各系統のページの能力表で「<code>C+c</code>」のように、ランクのあとに付く小文字で示しています。</p>
+
+      <h3>レベルの決まりかた</h3>
+      <p>実際のレベルは、基本レベルをマナレベルで修正した値です（端数切り捨て）。</p>
+      <div class="note">
+        <p><strong>基本レベル ×｛（強化属性のマナレベルの合計 － 弱化属性のマナレベルの合計）＋ 8｝÷ 8 ＝ 実際のレベル</strong></p>
+      </div>
+      <p>強化属性・弱化属性が複数あるときは、それぞれのマナレベルを合計した値を当てはめます。倍率には上限と下限があり、<strong>8 分の 10（1.25 倍）を上まわるときは 1.25 倍、8 分の 4（0.5 倍）を下まわるときは 0.5 倍</strong>になります。</p>
+      <p>マナレベルはランドごとに 8 属性それぞれ 0〜3 で決まり、アーティファクトを置く場所で変わります。決まりかたは<a href="/lom/artifacts/landmake/">ランドメイクのしくみ</a>にまとめています。</p>
+
+      <h3>基本レベルの求めかた</h3>
+      <p>まず<strong>レベル基準値</strong>を出し、それを下の対応表に当てはめて基本レベルを求めます。計算式は 2 つあり、通常は①を使います。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>計算式</th><th>レベル基準値</th><th>使う対象</th></tr></thead>
+          <tbody>
+            <tr><td>①</td><td>マイホームから対象のランドまでの<strong>距離</strong> ＋ そのランドが<strong>出現した順番</strong>（マイホームを 1 として数える）</td><td>通常のモンスター</td></tr>
+            <tr><td>②</td><td>設置したアーティファクトの数 × 1.5（端数切り捨て）</td><td>ボスモンスター、敵として登場する NPC、<a href="/lom/lands/flames/">焔城</a>と<a href="/lom/lands/cage-of-dreams/">夢の檻の中</a>に出現するモンスター</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>距離は上下左右に何ブロック離れているかで数えます。数えかたは<a href="/lom/artifacts/landmake/">ランドメイクのしくみ</a>にあります。</p>
+
+      <h3>レベル基準値と基本レベルの対応表</h3>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>基準値</th><th>基本Lv</th><th>基準値</th><th>基本Lv</th><th>基準値</th><th>基本Lv</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td>1</td>
+              <td>22</td><td>32</td>
+              <td>43</td><td>64</td>
+            </tr>
+            <tr>
+              <td>2</td><td>1</td>
+              <td>23</td><td>34</td>
+              <td>44</td><td>65</td>
+            </tr>
+            <tr>
+              <td>3</td><td>2</td>
+              <td>24</td><td>35</td>
+              <td>45</td><td>67</td>
+            </tr>
+            <tr>
+              <td>4</td><td>3</td>
+              <td>25</td><td>37</td>
+              <td>46</td><td>68</td>
+            </tr>
+            <tr>
+              <td>5</td><td>4</td>
+              <td>26</td><td>38</td>
+              <td>47</td><td>70</td>
+            </tr>
+            <tr>
+              <td>6</td><td>6</td>
+              <td>27</td><td>40</td>
+              <td>48</td><td>71</td>
+            </tr>
+            <tr>
+              <td>7</td><td>8</td>
+              <td>28</td><td>41</td>
+              <td>49</td><td>73</td>
+            </tr>
+            <tr>
+              <td>8</td><td>10</td>
+              <td>29</td><td>43</td>
+              <td>50</td><td>74</td>
+            </tr>
+            <tr>
+              <td>9</td><td>11</td>
+              <td>30</td><td>44</td>
+              <td>51</td><td>76</td>
+            </tr>
+            <tr>
+              <td>10</td><td>12</td>
+              <td>31</td><td>46</td>
+              <td>52</td><td>77</td>
+            </tr>
+            <tr>
+              <td>11</td><td>14</td>
+              <td>32</td><td>47</td>
+              <td>53</td><td>79</td>
+            </tr>
+            <tr>
+              <td>12</td><td>16</td>
+              <td>33</td><td>49</td>
+              <td>54</td><td>80</td>
+            </tr>
+            <tr>
+              <td>13</td><td>18</td>
+              <td>34</td><td>50</td>
+              <td>55</td><td>82</td>
+            </tr>
+            <tr>
+              <td>14</td><td>19</td>
+              <td>35</td><td>52</td>
+              <td>56</td><td>83</td>
+            </tr>
+            <tr>
+              <td>15</td><td>21</td>
+              <td>36</td><td>53</td>
+              <td>57</td><td>85</td>
+            </tr>
+            <tr>
+              <td>16</td><td>22</td>
+              <td>37</td><td>55</td>
+              <td>58</td><td>86</td>
+            </tr>
+            <tr>
+              <td>17</td><td>24</td>
+              <td>38</td><td>56</td>
+              <td>59</td><td>88</td>
+            </tr>
+            <tr>
+              <td>18</td><td>25</td>
+              <td>39</td><td>58</td>
+              <td>60</td><td>89</td>
+            </tr>
+            <tr>
+              <td>19</td><td>27</td>
+              <td>40</td><td>59</td>
+              <td>61</td><td>91</td>
+            </tr>
+            <tr>
+              <td>20</td><td>29</td>
+              <td>41</td><td>61</td>
+              <td>62</td><td>95</td>
+            </tr>
+            <tr>
+              <td>21</td><td>31</td>
+              <td>42</td><td>62</td>
+              <td>63</td><td>99</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>計算の例</h3>
+      <p>マイホームからの距離が 3、出現した順番が 17 番目のランドに、モールベア（強化：金・土　弱化：木・火）が出る場合です。</p>
+      <ol>
+        <li>レベル基準値 ＝ 3 ＋ 17 ＝ <strong>20</strong></li>
+        <li>対応表より、基本レベルは <strong>29</strong></li>
+        <li>そのランドの強化属性（金・土）のマナレベル合計が 3、弱化属性（木・火）の合計が 1 なら、倍率は ｛（3 － 1）＋ 8｝÷ 8 ＝ <strong>1.25 倍</strong></li>
+        <li>29 × 1.25 ＝ 36.25 → 端数を切り捨てて <strong>レベル 36</strong></li>
+      </ol>
+      <div class="tip">
+        <p>弱化属性のマナレベルが高いランドほど、そこに出るモンスターは弱くなります。同じアーティファクトでも置く場所で結果が変わるので、苦手な相手が出るランドは弱化属性の強い場所に出すと進めやすくなります。</p>
+      </div>
+
+      <h3>レベルの確かめかた</h3>
+      <p>モンスターのレベルは、<strong>バトル中にポーズをかける</strong>と確認できます。ポーズ中は方向キーで対象のモンスターを切り替えられます。</p>
+
+      <h2>戦利品</h2>
+      <p>モンスターを倒したときに出るジェムやお宝をまとめて<strong>戦利品</strong>と呼びます。倒した場所に出現し、<strong>時間が経つと消える</strong>ので、その場で拾ってください。戦利品でしか手に入らないアイテムが数多くあります。</p>
+
+      <h3>ザコの戦利品は 8 枠</h3>
+      <p>ザコ 64 種には、どれも戦利品①〜⑧の 8 枠が設定されていて、倒すと必ずそのうちのひとつを落とします。判定は①から始まり、<strong>2 分の 1 の確率でその枠を落とし、2 分の 1 の確率で次の枠の判定へ進む</strong>という形でくり返されます。番号が後ろの枠ほど出にくく、そのぶん貴重なものが置かれています。</p>
+      <p>①がジェムのザコは 59 種あります。ふだんの戦闘でジェムばかり落ちるのは、もっとも出やすい①にジェムが置かれているためです。</p>
+      <p>枠の並びの例として、ラビの戦利品は次のようになっています。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>枠</th><th>中身</th><th>落とす可能性が生まれる基本レベル</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>①</td>
+              <td>ジェム×5＋ルク×1</td>
+              <td>1 以上</td>
+            </tr>
+            <tr>
+              <td>②</td>
+              <td>まんまるドロップ</td>
+              <td>1 以上</td>
+            </tr>
+            <tr>
+              <td>③</td>
+              <td>獣肉</td>
+              <td>1 以上</td>
+            </tr>
+            <tr>
+              <td>④</td>
+              <td>獣の革</td>
+              <td>1 以上</td>
+            </tr>
+            <tr>
+              <td>⑤</td>
+              <td>獣の骨</td>
+              <td>16 以上</td>
+            </tr>
+            <tr>
+              <td>⑥</td>
+              <td>つぶらな瞳</td>
+              <td>32 以上</td>
+            </tr>
+            <tr>
+              <td>⑦</td>
+              <td>ふさふさのけだま</td>
+              <td>48 以上</td>
+            </tr>
+            <tr>
+              <td>⑧</td>
+              <td>ラビ耳フード</td>
+              <td>64 以上</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>⑤〜⑧は、<strong>基本レベルが一定以上になって初めて判定されます</strong>。基本レベルは実際のレベルとは別の値で、マナレベルでは変わりません。レベル基準値（距離＋出現順）だけで決まります。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>枠</th><th>必要な基本レベル</th><th>そのために必要なレベル基準値</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>⑤</td>
+              <td>16 以上</td>
+              <td>12 以上（基本レベル 16）</td>
+            </tr>
+            <tr>
+              <td>⑥</td>
+              <td>32 以上</td>
+              <td>22 以上（基本レベル 32）</td>
+            </tr>
+            <tr>
+              <td>⑦</td>
+              <td>48 以上</td>
+              <td>33 以上（基本レベル 49）</td>
+            </tr>
+            <tr>
+              <td>⑧</td>
+              <td>64 以上</td>
+              <td>43 以上（基本レベル 64）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>つまりラビの「ラビ耳フード」を狙うなら、ラビが出るランドのレベル基準値が 43 以上でなければなりません。マイホームから遠く、しかも後から出したランドほど条件を満たしやすくなります。</p>
+
+      <h3>判定に影響するもの</h3>
+      <ul>
+        <li><strong>ザコかボスか</strong> … ボスは中身が決まっていて、8 枠の判定を行いません</li>
+        <li><strong>モンスターの基本レベル</strong> … ⑤〜⑧が判定されるかどうかを決めます</li>
+        <li><strong>トドメを刺したキャラクターの運</strong> … 運が高いと、一定の確率で①と②を飛ばして③から判定を始めます</li>
+        <li><strong>オーガボックスとのシンクロ</strong> … この飛ばしが、運に関係なく確実に起こります</li>
+      </ul>
+      <p>①と②を飛ばせるかどうかで、後ろの枠の出やすさは大きく変わります。下は出現確率の例です。分母はいずれも 128 で、「―」はその条件では出ないことを表します。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>枠</th><th>基本レベル 1〜15</th><th>基本レベル 32〜47</th><th>基本レベル 64 以上</th><th>基本レベル 64 以上＋シンクロ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>①</td><td>64／128</td><td>64／128</td><td>64／128</td><td>―</td></tr>
+            <tr><td>②</td><td>32／128</td><td>32／128</td><td>32／128</td><td>―</td></tr>
+            <tr><td>③</td><td>16／128</td><td>16／128</td><td>16／128</td><td>64／128</td></tr>
+            <tr><td>④</td><td>16／128</td><td>8／128</td><td>8／128</td><td>32／128</td></tr>
+            <tr><td>⑤</td><td>―</td><td>4／128</td><td>4／128</td><td>16／128</td></tr>
+            <tr><td>⑥</td><td>―</td><td>4／128</td><td>2／128</td><td>8／128</td></tr>
+            <tr><td>⑦</td><td>―</td><td>―</td><td>1／128</td><td>4／128</td></tr>
+            <tr><td>⑧</td><td>―</td><td>―</td><td>1／128</td><td>4／128</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>レアを狙うとき</h3>
+      <ul>
+        <li><strong>基本レベルの高いランドで戦う</strong> … ⑤〜⑧が判定されるようになります。レベル基準値は距離＋出現順なので、狙いのモンスターが出るランドを遠くに、後から出します</li>
+        <li><strong>運の高いキャラクターでトドメを刺す</strong> … ①②を飛ばせる確率が上がります。運の値は各系統のページの能力表にもあります</li>
+        <li><strong>オーガボックスを連れてシンクロする</strong> … シンクロ効果は「レア・トレジャー」で、確実に③から判定が始まります。ヒナはゴミ山・掘り出し産地（MAP13-11）、レイリスの塔・11F運命の部屋（MAP16-39）で見つかります</li>
+      </ul>
+      <div class="warning">
+        <p>戦利品は放っておくと消えます。まとめて倒してから拾い集めようとすると、先に倒した相手のぶんが消えていることがあります。</p>
+      </div>
+
+      <h3>ボスの戦利品</h3>
+      <p>ボス（形態違いを含む）は 43 体で、戦利品の中身は次のとおりです。ザコのような 8 枠の判定はありません。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>戦利品</th><th>ボスの数</th></tr></thead>
+          <tbody>
+            <tr><td>ジェム（大）×5＋ルク（大）×2</td><td>31 体</td></tr>
+            <tr><td>落とさない</td><td>6 体</td></tr>
+            <tr><td>ジェム（大）×6＋ルク（大）×2</td><td>5 体</td></tr>
+            <tr><td>ジェム×5＋ルク×2</td><td>1 体</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>経験値</h2>
+      <p>戦利品として出たジェムを拾うと、主人公や NPC が経験値を得て成長します。1 個あたりの経験値は、落としたモンスターの<strong>基本レベル</strong>から決まります。</p>
+      <div class="note">
+        <p><strong>1 ジェムあたりの経験値 ＝（基本レベル － 10）÷ 2 ＋ 10</strong>（基本レベルが 10 以下のときは、基本レベルがそのまま経験値）</p>
+      </div>
+      <p><strong>ジェム（大）</strong>は、同じ式で出した値の <strong>10 倍</strong>の経験値になります。ジェム（大）が出るのはボスの戦利品だけです。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>基本レベル</th><th>ジェム 1 個</th><th>ジェム（大）1 個</th></tr></thead>
+          <tbody>
+            <tr><td>10</td><td>10</td><td>100</td></tr>
+            <tr><td>20</td><td>15</td><td>150</td></tr>
+            <tr><td>30</td><td>20</td><td>200</td></tr>
+            <tr><td>40</td><td>25</td><td>250</td></tr>
+            <tr><td>50</td><td>30</td><td>300</td></tr>
+            <tr><td>60</td><td>35</td><td>350</td></tr>
+            <tr><td>70</td><td>40</td><td>400</td></tr>
+            <tr><td>80</td><td>45</td><td>450</td></tr>
+            <tr><td>90</td><td>50</td><td>500</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>基本レベルが上がっても経験値の伸びは半分ずつなので、ジェムを数多く拾えるほうが効きます。一方でボスが落とすジェム（大）は 1 個で 10 倍ぶんになります。</p>
+
+      <h2>攻撃の追加効果</h2>
+      <p>モンスターの攻撃には、ステータス異常を起こしたり能力値を下げたりする追加効果を持つものが多くあります。どの攻撃にどの効果が付くかは<a href="/lom/monsters/attacks/">敵の攻撃リスト</a>にまとめています。ここでは、ステータス異常とは働きが違う 3 種類を扱います。</p>
+
+      <h3>アタックゲージをゼロにする攻撃</h3>
+      <p>受けると、たまっていたアタックゲージがゼロに戻ります。必殺技を撃つ直前にこれを受けると、ためたぶんが無駄になります。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>攻撃</th><th>使ってくるモンスター</th></tr></thead>
+          <tbody>
+            <tr><td>にらみつけ</td><td>ラビ、ティディ、シャドウゼロ、シャドウゼロワン（ボス）、ゲイザー（ボス）、宝石王1000（ボス）</td></tr>
+            <tr><td>リップル(右下顔)</td><td>ゼーブル・ファー（ボス）</td></tr>
+            <tr><td>光輪(光)</td><td>不死皇帝（ボス）</td></tr>
+            <tr><td>光輪(土)</td><td>不死皇帝（ボス）、不死皇帝第2形態（ボス）</td></tr>
+            <tr><td>光輪(水)</td><td>不死皇帝（ボス）</td></tr>
+            <tr><td>光輪(火)</td><td>不死皇帝（ボス）</td></tr>
+            <tr><td>光輪(金)</td><td>不死皇帝（ボス）、不死皇帝第2形態（ボス）</td></tr>
+            <tr><td>光輪(闇)</td><td>不死皇帝第2形態（ボス）</td></tr>
+            <tr><td>光輪(風)</td><td>不死皇帝（ボス）、不死皇帝第2形態（ボス）</td></tr>
+            <tr><td>凝視(アタックゲージゼロ)</td><td>ボルダー</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">
+        <p>モンスターにはアタックゲージがありません。そのため、ペットがこの効果を持つ攻撃を使っても相手のゲージには影響しません（ダメージは与えられます）。</p>
+      </div>
+
+      <h3>HP 吸収</h3>
+      <p>与えたダメージの <strong>4 分の 1</strong> だけ、攻撃した側の HP が回復します。長引くほど相手の HP が戻るので、こちらの回復手段が細いときは早めに倒しきるほうが楽です。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>攻撃</th><th>使ってくるモンスター</th></tr></thead>
+          <tbody>
+            <tr><td>HP吸収</td><td>ゴーヴァ（ボス）</td></tr>
+            <tr><td>まるのみ(1)</td><td>ぱっくんトカゲ</td></tr>
+            <tr><td>まるのみ(2)</td><td>キーマ（ボス）</td></tr>
+            <tr><td>まるのみ(3)</td><td>ティアマット（ボス）</td></tr>
+            <tr><td>ドレイン光球</td><td>不死皇帝第2形態（ボス）</td></tr>
+            <tr><td>ビーム(4)</td><td>ゼーブル・ファー（ボス）</td></tr>
+            <tr><td>ブラッディサークル</td><td>鳩血鬼（ボス）</td></tr>
+            <tr><td>吸収</td><td>スプリガン（ボス）</td></tr>
+            <tr><td>吸血かみつき</td><td>バウンドウルフ、ラスター、ラドーン、バットム、スライム、カーミラ</td></tr>
+            <tr><td>拡大タッチ</td><td>スペクター</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>割合ダメージ</h3>
+      <p>モンスター専用の攻撃方法で、与えるダメージが<strong>攻撃側の残り HP に応じて変わります</strong>。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>攻撃</th><th>使ってくるモンスター</th></tr></thead>
+          <tbody>
+            <tr><td>自爆</td><td>ラ・バン（ボス）、グレイドゥ（ボス）</td></tr>
+            <tr><td>超重力</td><td>宝石王1000（ボス）</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>敵のアクション</h2>
+      <p>モンスターは攻撃以外の動きもします。バトルの流れに影響するのは次の 3 つです。</p>
+
+      <h3>ガードポーズ</h3>
+      <p>直接形態・間接形態のすべての攻撃をガードします。<strong>魔法と必殺技はガードされません</strong>。ガードが成立すると軽い金属音が鳴り、白い波紋のような演出が出ます。使ってくるモンスターは比較的多く、通常攻撃が通らないと感じたら魔法か必殺技に切り替えると崩せます。</p>
+
+      <h3>避け動作</h3>
+      <p>一瞬身を引いて攻撃をよける動作で、大半のモンスターが使います。<strong>よけた直後に反撃してくることがある</strong>ので、空振りしたときは続けて振らず、いったん間合いを取るほうが安全です。</p>
+
+      <h3>無敵状態</h3>
+      <p>すべての攻撃が無効になる状態です。モンスターの身体が点滅しているとき（魔法の発動直後や、ボスの必殺技の発動中）は無敵で、攻撃が当たりません。このほか、ダークプリーストの『体当たり』中のように、特定の行動中だけ無敵になるものもあります。点滅が消えてから攻撃を入れてください。</p>
+
+      <h2>戦いかた</h2>
+
+      <h3>基本はクイックアタックの連発</h3>
+      <p>クイックアタックは ○ ボタンで出す、もっとも使用頻度の高い攻撃です。<strong>攻撃の先端がぎりぎり当たる間合い</strong>から 1 撃目を当てていくだけで、ほとんどのモンスターを一方的に倒せます。</p>
+      <p>クイックアタックだけで連続攻撃を組むこともできます。手順は次のとおりです。</p>
+      <ol>
+        <li>クイックアタックを限界数まで先行入力する（片手斧なら 3 撃目まで）</li>
+        <li>最後の一撃の動作が終わったのを見てから、1 撃目へ戻す</li>
+      </ol>
+      <p>タイミングが合うと 1 撃目にも残像が付きます。</p>
+      <div class="warning">
+        <p>先行入力の限界数は武器系統ごとに決まっています。<strong>限界数より多く ○ ボタンを押すと、連続攻撃が終わったあとに硬直します</strong>。押しすぎないでください。</p>
+      </div>
+
+      <h3>武器による違い</h3>
+      <p>反撃を受ける可能性は、<strong>攻撃の動作時間が短い武器ほど、またリーチが長い武器ほど小さく</strong>なります。</p>
+      <ul>
+        <li><strong>短剣</strong> … 2 本 1 セットで左右の手を交互に振るため、攻撃の動作時間が長くなっています</li>
+        <li><strong>グラブ</strong> … 射程が極端に短く、踏み込む必要があります</li>
+        <li><strong>弓</strong> … 攻撃が画面端まで届きます。離れて連発するだけでほぼ無傷で勝てるので、バトルエリアが広いほど有利です</li>
+      </ul>
+
+      <h3>コマンドアッパーの使いどころ</h3>
+      <p>コマンドアッパーは <strong>↙ または ↘ ＋ △ ボタン</strong>で出します。当てると相手が大きく吹き飛ぶため、反撃を受けにくくなります。ヒット＆アウェイで戦えば、ほとんどダメージを受けずに済みます。</p>
+      <p>画面端を使うと、次の形で攻め続けられます。</p>
+      <ol>
+        <li>クイックアタックの 1 撃目を当てたら、すぐにコマンドアッパーを入力する</li>
+        <li>相手は後方へ吹き飛ぶが、画面端まで来ていればそこで後退が止まる</li>
+        <li>またクイックアタックから同じことをくり返す</li>
+      </ol>
+      <p>この連続攻撃は、必殺技を使うボス以外には抜け出されません。</p>
+
+      <h3>反撃を受けない連続攻撃</h3>
+      <p>連続攻撃の多くは途中で反撃を受ける可能性がありますが、クイックアタックとアビリティを組み合わせると反撃を受けずに攻め続けられます。</p>
+      <ol>
+        <li>クイックアタックの 1 撃目を当て、その直後に『プッシュ』を出す（先行入力のほうがタイミングを取りやすい）</li>
+        <li>体勢がくずれた相手にクイックアタック。1〜2 をくり返して相手を画面端まで押しこむ</li>
+        <li>お互いが画面端に着いたら、使うアビリティを『プッシュ』から『背面取り』に変える</li>
+        <li>相手を反転させたところへクイックアタック。以降はこれをくり返す</li>
+      </ol>
+
+      <h3>敵に囲まれたとき</h3>
+      <p>バトルでは 2〜4 体のモンスターと同時に戦うのが基本で、圧倒的な攻撃力の武器を持っていなければ混戦になりやすくなります。囲まれると逃げ道がなくなり、続けて攻撃を受けることがあります。</p>
+      <ul>
+        <li><strong>必殺技を発動して無敵状態になる</strong> … 発動さえ間に合えば、脱出手段としてほぼ確実に働きます</li>
+        <li><strong>アタックゲージがたまっていないときは『イリュージョン』</strong>で代用します</li>
+        <li><strong>相手の体勢をくずす</strong>なら『プッシュ』『グラップル』『背面取り』です</li>
+        <li>コマンドアッパーでも脱出できますが、確実ではありません</li>
+      </ul>
+      <div class="tip">
+        <p>囲まれてからアタックゲージをためるのは困難です。混戦になりそうな場所では、必殺技を 1 回ぶん残しておくと立て直せます。上の「アタックゲージをゼロにする攻撃」を使う相手がいるときは、ためきったら早めに撃ってしまうほうが確実です。</p>
+      </div>
+
+      <h3>ボス戦</h3>
+      <p>反撃を受けない連続攻撃は安全ですが、一撃あたりのダメージが極端に低いため、ボス相手では長期戦になります。早く終わらせたいときは、通常の連続攻撃や必殺技を併用してください。<strong>ボスをピヨリ状態にしたときは必殺技を決めます</strong>。</p>
+
+      <h3>仲間を連れるかどうか</h3>
+      <p>仲間はパーティーに加わって一緒に戦いますが、単発の攻撃を出して終わることが多くなります。ある程度レベルが上がらないと戦力になりにくく、そのうえ<strong>仲間はジェムを積極的に取りに行かない</strong>ため、レベルも上げにくくなっています。レベルの問題は「持たざる者の指輪」などのアイテムで補えます。</p>
+      <p>一方で、<strong>主人公が戦闘不能になっても、仲間が健在ならゲームオーバーになりません</strong>。保険として連れる意味はあります。</p>
+      <p><a href="/lom/golem/">ゴーレム</a>はレベルを上げる必要がなく、行動パターンをこちらである程度決められます。</p>
+
+      <div class="note">
+        <p>ボタンの表記は PS 版のものです。</p>
+      </div>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+          <li><a href="/lom/monsters/attacks/">敵の攻撃リスト</a></li>
+          <li><a href="/lom/monsters/boss1/">ボスモンスター（前半）</a></li>
+          <li><a href="/lom/monsters/boss2/">ボスモンスター（後半）</a></li>
+          <li><a href="/lom/monsters/pet-data/">ペットの種族別データ</a></li>
+          <li><a href="/lom/artifacts/landmake/">ランドメイクのしくみ</a></li>
+          <li><a href="/lom/battle/">バトルシステム・必殺技・魔法</a></li>
+          <li><a href="/lom/lands/">ランド</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/lom/">トップ</a>
+        <a href="/lom/about/">このWikiについて</a>
+        <a href="/lom/privacy/">プライバシーポリシー</a>
+        <a href="/lom/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 聖剣伝説 Legend of Mana 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/lom/js/main.js?v=1e346c8a"></script>
+</body>
+</html>

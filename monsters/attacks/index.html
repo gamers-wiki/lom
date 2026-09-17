@@ -1,0 +1,5344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>敵の攻撃リスト - 聖剣伝説 Legend of Mana 攻略Wiki</title>
+  <meta name="description" content="聖剣伝説 Legend of Mana でモンスターと敵NPCが使う攻撃の一覧。威力・形態・種別・属性・ダメージ計算に使う能力・追加効果と、状態異常を与える攻撃のまとめ。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/lom/monsters/attacks/">
+
+  <meta property="og:site_name" content="聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="敵の攻撃リスト - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta property="og:description" content="聖剣伝説 Legend of Mana でモンスターと敵NPCが使う攻撃の一覧。威力・形態・種別・属性・ダメージ計算に使う能力・追加効果と、状態異常を与える攻撃のまとめ。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/lom/monsters/attacks/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="敵の攻撃リスト - 聖剣伝説 Legend of Mana 攻略Wiki">
+  <meta name="twitter:description" content="聖剣伝説 Legend of Mana でモンスターと敵NPCが使う攻撃の一覧。威力・形態・種別・属性・ダメージ計算に使う能力・追加効果と、状態異常を与える攻撃のまとめ。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/lom/images/ogp.png">
+
+  <link rel="icon" href="/lom/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/lom/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/lom/apple-touch-icon.png">
+  <meta name="theme-color" content="#1f3d2b">
+
+  <link rel="stylesheet" href="/lom/css/style.css?v=27afd877">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/lom/"},{"@type":"ListItem","position":2,"name":"モンスター・ペット","item":"https://gamers-wiki.github.io/lom/monsters/"},{"@type":"ListItem","position":3,"name":"敵の攻撃リスト","item":"https://gamers-wiki.github.io/lom/monsters/attacks/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/lom/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">❀</span>
+        <span class="logo-text">
+          <span class="logo-title">LEGEND OF MANA</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/lom/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：エスカデ、ニキータ、果樹園）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/story/">イベント攻略</a></li>
+      <li><a href="/lom/artifacts/">アーティファクト</a></li>
+      <li><a href="/lom/lands/">ランド</a></li>
+      <li><a href="/lom/characters/">キャラクター</a></li>
+      <li><a href="/lom/battle/">バトル・必殺技</a></li>
+      <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+      <li><a href="/lom/items/">アイテム</a></li>
+      <li><a href="/lom/orchard/">果樹園</a></li>
+      <li><a href="/lom/monsters/" class="current">モンスター・ペット</a></li>
+      <li><a href="/lom/golem/">ゴーレム</a></li>
+      <li><a href="/lom/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/lom/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/lom/">トップ</a></li>
+      <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+      <li>敵の攻撃リスト</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/story/">イベント攻略（全68イベント）</a></li>
+          <li><a href="/lom/artifacts/">アーティファクト・ランドメイク</a></li>
+          <li><a href="/lom/lands/">ランド（全27＋1）</a></li>
+          <li><a href="/lom/characters/">キャラクター</a></li>
+          <li><a href="/lom/battle/">バトルシステム・必殺技・魔法</a></li>
+          <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+          <li><a href="/lom/items/">アイテム</a></li>
+          <li><a href="/lom/orchard/">果樹園</a></li>
+          <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+          <li><a href="/lom/golem/">ゴーレム製作</a></li>
+          <li><a href="/lom/extra/">やり込み・シークレット</a></li>
+          <li><a href="/lom/column/">世界設定・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">3大ストーリー</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/lom/story/jewel/">宝石泥棒編</a></li>
+          <li><a href="/lom/story/escad/">エスカデ編</a></li>
+          <li><a href="/lom/story/dragon/">ドラゴンキラー編</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/lom/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/lom/about/">このWikiについて</a></li>
+          <li><a href="/lom/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>敵の攻撃リスト</h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/lom/monsters/">モンスター・ペット</a></span><span>全496種</span></div>
+      </div>
+
+      <p class="article-lead">モンスターと敵として戦う NPC が使う攻撃の一覧です。どの能力でダメージが決まるか、どの防御力で受けるかが分かると、装備と戦いかたを選びやすくなります。</p>
+
+      <ul class="monster-nav">
+        <li><a href="/lom/monsters/">モンスター・ペットの入口</a></li>
+        <li><a href="/lom/monsters/system/">モンスターのしくみと戦術</a></li>
+        <li><a href="/lom/monsters/boss1/">ボス（前半）</a></li>
+        <li><a href="/lom/monsters/boss2/">ボス（後半）</a></li>
+      </ul>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>表の見かた</h2>
+      <ul>
+        <li><strong>威力</strong> … A がもっとも高く、B・C・D・E の順に下がります</li>
+        <li><strong>形態</strong> … 攻撃の出しかた。直接（体や武器を当てる）、魔法、ブレス、凝視、間接（飛び道具）など</li>
+        <li><strong>種別</strong> … たたき型・斬り型・突き型・魔法型のどれか。こちらの叩防・斬防・突防・魔防のうち、対応する防御力で軽くなります</li>
+        <li><strong>属性</strong> … 攻撃に乗っている属性。「―」は無属性です</li>
+        <li><strong>能力値</strong> … ダメージ計算に使う能力。攻撃側は相手の、防御側はこちらのその能力が効きます</li>
+        <li><strong>追加効果</strong> … 状態異常や能力低下。<code>[相手]体力▼▼</code> は当てられた側の体力が下がることを表します</li>
+      </ul>
+
+      <h2>モンスターが使う攻撃</h2>
+      <p>五十音順です。同じ名前で末尾に (1)(2) が付くものは、威力や動きが違う別の攻撃として扱われています。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>攻撃名</th><th>威力</th><th>形態</th><th>種別</th><th>属性</th><th>攻撃</th><th>防御</th><th>追加効果</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>HP吸収</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>あばらアタック</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>精神</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>あやつりいと</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>うっふん</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>おじぎ攻撃</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>かみつき(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>かみつき(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>かみつき(3)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>かみつき(4)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>かみつき(5)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>かみつき(6)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>くちばし(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>くちばし(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>くちばし(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>しがみつき</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>技</td>
+              <td class="wrap">[相手]力▼</td>
+            </tr>
+            <tr>
+              <th>しがみつき(マヒ)</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>たたきつぶし</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>たたきつぶす</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">[相手]体力▼▼</td>
+            </tr>
+            <tr>
+              <th>ため息</th>
+              <td>D</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">[相手]力▼▼</td>
+            </tr>
+            <tr>
+              <th>ちびっこバブル</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">ちびっこ</td>
+            </tr>
+            <tr>
+              <th>ついばみ</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>つかむ(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>つかむ(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>つらら</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>つらら(ピヨリ)</th>
+              <td>A</td>
+              <td>間接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>つらら落とし</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>土・風</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>でこぴん</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>とげ</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>とげとばし</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>どんぐりボム</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>なぎ払い(1)</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>なぎ払い(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>なぐりとばし</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>なめる(1)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>なめる(混乱)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>なめる(眠り)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>にらみつけ</th>
+              <td>E</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>ひっかき(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ひっかき(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>まきつき</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>まるのみ(1)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>体力</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>まるのみ(2)</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>まるのみ(3)</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>体力</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>アイビーム</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]魅力▼▼</td>
+            </tr>
+            <tr>
+              <th>アースシェイカー</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>土</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>アースハンマー</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>土</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>イビルウェイブ</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>闇</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>イビルプリズン</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>闇</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>ウイングブレス(1)</th>
+              <td>D</td>
+              <td>ブレス</td>
+              <td>突き</td>
+              <td>風</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ウイングブレス(2)</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>風</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ウォーターダンク</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>水</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]魔法▼▼</td>
+            </tr>
+            <tr>
+              <th>ウッドスカッシュ</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>木</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>エアウインド</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>風</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>エアショット</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>風</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>エッグボム</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エネルギー弾(1)</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エネルギー弾(2)</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エメラルドパイン</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>木</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]体力▼▼</td>
+            </tr>
+            <tr>
+              <th>エンジェルボイス</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>オーブ</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>オーラドゥーム</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>金</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>オーラドライブ</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>金</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>カタストロフィ</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>カマ両手</th>
+              <td>D</td>
+              <td>間接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>カマ片手</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>カンガルーキック</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ガントレット(1)</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ガントレット(2)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>キック(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>キック(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>キック(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>キック(4)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>キック(5)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>キッス</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">ちびっこ</td>
+            </tr>
+            <tr>
+              <th>キャノン</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>グライダーアタック(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>グライダーアタック(2)</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>グライダースパイク</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>グランドスラム</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ケルベロスフォース</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>ケンカキック</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>ゴミ</th>
+              <td>B</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ゴールドハリケーン</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>金</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>サイクロンニードル</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>風</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]技▼▼</td>
+            </tr>
+            <tr>
+              <th>サブマリンアッパー</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>サマーソルトキック</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>サンドブレス</th>
+              <td>D</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>土</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>シャンプー</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ジャブ</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ジャンピングハンマー</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ジャンプ</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ジャンプブレス(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ジャンプブレス(2)</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ジャンプブレス(3)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ジャンプ斬り</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ジャンプ踏みつけ</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ストレート</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>スパイダーネット</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>スプラッシュパール</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>水</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>スミ</th>
+              <td>E</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>スライディング</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ズームパンチ</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>セイントバースト</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>光</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>セイントフレイム</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>光</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダイブアタック</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>ダッシュ突き(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダッシュ突き(2)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダブルラリアット</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>ダークネメシス</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>闇</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダークフォース</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>闇</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>トライアタック(1)</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>トライアタック(2)</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>トライデント</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]魔法▼▼</td>
+            </tr>
+            <tr>
+              <th>トルネードクロス</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>風</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>トルネードブロー</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>風</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ドラゴンブレス</th>
+              <td>A</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>ドラゴンブレス(凍結)</th>
+              <td>A</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">凍結</td>
+            </tr>
+            <tr>
+              <th>ドラゴンブレス(毒)</th>
+              <td>A</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>ドラゴンブレス(炎上)</th>
+              <td>A</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>ドリル</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ドレイン光球</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>ドロップキック</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ドングリ投げ</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ノヴァドライブ</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ハサミ(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ハサミ(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ハサミ(3)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ハンマー</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ハンマーナックル(1)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ハンマーナックル(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バットムスピア</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バブルショック</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>水</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">凍結</td>
+            </tr>
+            <tr>
+              <th>バブルブレス</th>
+              <td>C</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>パルス</th>
+              <td>D</td>
+              <td>音波</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>パンチ(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>パンチ(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>パンチ(3)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>パンチ(4)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>パンチ(5)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>パンチ(暗闇)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>パンプキンボム</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ヒップアタック(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ヒップアタック(2)</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ビンタ</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ビーム(1)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ビーム(2)</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ビーム(3)</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ビーム(4)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>ファイア(1)</th>
+              <td>D</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>ファイア(2)</th>
+              <td>E</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>ファイア(3)</th>
+              <td>E</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>ファイアカクテル</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>ファイアブレス</th>
+              <td>D</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>ファイアーブレス</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>魔法</td>
+              <td>土、水</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">凍結</td>
+            </tr>
+            <tr>
+              <th>ブラックシックル</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>闇</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]精神▼▼</td>
+            </tr>
+            <tr>
+              <th>ブラックシャムシール</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>闇</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]精神▼▼</td>
+            </tr>
+            <tr>
+              <th>ブラックスティンガー</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>闇</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]精神▼▼</td>
+            </tr>
+            <tr>
+              <th>ブラックホール</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>ブラッディサークル</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>ブレイズランチャー</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]力▼▼</td>
+            </tr>
+            <tr>
+              <th>ブレイズヴァイス</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]力▼▼</td>
+            </tr>
+            <tr>
+              <th>ブレス</th>
+              <td>D</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ブレス(炎上-1)</th>
+              <td>A</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>ブレス(炎上-2)</th>
+              <td>A</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>ブレス(眠り)</th>
+              <td>A</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>ブレス失敗</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ブーメラン(1)</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ブーメラン(2)</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>プチアイビーム(1)</th>
+              <td>E</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">[相手]精神▼▼</td>
+            </tr>
+            <tr>
+              <th>プチアイビーム(2)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>光</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]魅力▼▼</td>
+            </tr>
+            <tr>
+              <th>プチバブル</th>
+              <td>E</td>
+              <td>ブレス</td>
+              <td>魔</td>
+              <td>水</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>プチブレス</th>
+              <td>E</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>プラチナニードル</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>金</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]運▼▼</td>
+            </tr>
+            <tr>
+              <th>ヘッドアタック</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ベロ(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ベロ(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ベロ(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ベロ(マヒ)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>ホーリーステイク</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>光</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]魅力▼▼</td>
+            </tr>
+            <tr>
+              <th>ボディスラム</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ボール遊び</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>ポイズンブレス</th>
+              <td>D</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>マヒ凝視</th>
+              <td>E</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>マヒ投石</th>
+              <td>D</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>ミサイル</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>リップル(右下顔)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>リップル(左下顔)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>リングビーム</th>
+              <td>B</td>
+              <td>音波</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>リングビーム(混乱)</th>
+              <td>D</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>レッグキャノン</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>レーザー</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>レーザー光線</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ロケットパンチ(1)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ロケットパンチ(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ロックウォール</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>土</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]防御▼▼</td>
+            </tr>
+            <tr>
+              <th>ロックストリーム</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>土</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]防御▼▼</td>
+            </tr>
+            <tr>
+              <th>ワンツー</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>串刺し</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>乱舞</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>体当たり(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>体当たり(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>体当たり(3)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>体当たり(4)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>体当たり(5)</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>光・火・風</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>体当たり(6)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>体当たり(7)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>体当たり(8)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>催眠凝視</th>
+              <td>E</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>光球</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>光</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>光線(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>光線(2)</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>光輪(光)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>光輪(土)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>光輪(水)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>光輪(火)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>光輪(金)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>光輪(闇)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>光輪(風)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>凝視(アタックゲージゼロ)</th>
+              <td>D</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">アタックゲージゼロ</td>
+            </tr>
+            <tr>
+              <th>凝視(混乱)</th>
+              <td>D</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>凝視(眠り)</th>
+              <td>D</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>凝視(石化)</th>
+              <td>D</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">石化</td>
+            </tr>
+            <tr>
+              <th>分身攻撃</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>剣</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>剣兜割り</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">[相手]体力▼▼</td>
+            </tr>
+            <tr>
+              <th>吊り天井落とし</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>吸収</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>吸血かみつき</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>魔法</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>呪いの剣(1)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>闇</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">[相手]魔法▼▼</td>
+            </tr>
+            <tr>
+              <th>呪いの剣(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>闇</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">[相手]魔法▼▼</td>
+            </tr>
+            <tr>
+              <th>呪いの剣(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>闇</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">[相手]魔法▼▼</td>
+            </tr>
+            <tr>
+              <th>呪いの剣(暗闇)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>闇</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>回転アタック</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>回転攻撃(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>回転攻撃(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>回転飛び蹴り</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>地走りビーム</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>大暴走</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>天上天下(1)</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">[相手]力&amp;技&amp;防御▼▼</td>
+            </tr>
+            <tr>
+              <th>天上天下(2)</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">[相手]魔法&amp;精神&amp;魅力▼▼</td>
+            </tr>
+            <tr>
+              <th>宝石</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>小泡</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>尻尾(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>尻尾(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>尻尾(3)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>尻尾(4)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>尻尾(5)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>尻尾(毒)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>弓(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>弓(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>弓(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>強撃</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>強酸</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>往復ビンタ</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>必殺ひっかき</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>思いっきりパンチ</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>手袋投げ</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>打</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>投石</th>
+              <td>D</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>抱きつき</th>
+              <td>E</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>拡大タッチ</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">HP吸収</td>
+            </tr>
+            <tr>
+              <th>拡大ビンタ</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>拡散糸弾</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>振り子</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>捕獲</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>攻撃(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>攻撃(2)</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>攻撃(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>攻撃(4)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>放電(1)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>放電(2)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>風、水</td>
+              <td>力</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>放電(マヒ)</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>斧(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斧(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斧(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斧投げ(1)</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斧投げ(2)</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斧投げ(3)</th>
+              <td>C</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斧振り(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斧振り(2)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斧振り(ピヨリ)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>斧横振り</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斧縦振り</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斬</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>斬り</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>果物投げ</th>
+              <td>B</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>楽器</th>
+              <td>B</td>
+              <td>音波</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>槍</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>槍ジャンプ</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>槍叩く</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>槍回す</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>槍突き</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>槍突く</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>横斬り</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>次元斬</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>次元環</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>武神</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>殴る</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>毒かみつき</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>毒矢</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>毒花粉</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>体力</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>毒針</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>金</td>
+              <td>技</td>
+              <td>技</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>水流ブレス</th>
+              <td>D</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>水鉄砲</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>水</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>波動砲</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>泣き叫ぶ</th>
+              <td>E</td>
+              <td>音波</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>泣く</th>
+              <td>E</td>
+              <td>音波</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>火炎放射</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>爪(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>爪(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>爪(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>爪(4)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>爪(マヒ)</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>片手ひっかき</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>片目アイビーム</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]魅力▼▼</td>
+            </tr>
+            <tr>
+              <th>異臭</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>百烈突き</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>真ビーム</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>短剣(1)</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>短剣(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>短剣(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>石つぶて</th>
+              <td>D</td>
+              <td>間接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>石化くちばし</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>土</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">石化</td>
+            </tr>
+            <tr>
+              <th>石化ガス</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">石化</td>
+            </tr>
+            <tr>
+              <th>石化光線</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">石化</td>
+            </tr>
+            <tr>
+              <th>石化凝視</th>
+              <td>E</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">石化</td>
+            </tr>
+            <tr>
+              <th>砂ブレス</th>
+              <td>E</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>土・風</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>種</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>木</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>種ブレス</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>種飛ばし</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>空中衝撃波</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突き(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突き(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突き(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突く</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突進(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突進(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突進(3)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突進(4)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突進(5)</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突進(6)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>突進(7)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>竜語魔法(1)</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]魔力▼▼</td>
+            </tr>
+            <tr>
+              <th>竜語魔法(2)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]体力▼▼</td>
+            </tr>
+            <tr>
+              <th>粒子加速ビーム</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">石化</td>
+            </tr>
+            <tr>
+              <th>粘液(1)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">[相手]全能力値▼</td>
+            </tr>
+            <tr>
+              <th>粘液(2)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">[相手]全能力値▼▼</td>
+            </tr>
+            <tr>
+              <th>粘液(3)</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">[相手]全能力値▼▼</td>
+            </tr>
+            <tr>
+              <th>糸弾</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>絨毯めくり</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>縦斬り</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>羽ばたき</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>羽根(1)</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>羽根(2)</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>羽根(3)</th>
+              <td>D</td>
+              <td>間接</td>
+              <td>突き</td>
+              <td>風</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>羽虫ブレス</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>翼攻撃</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>肋骨</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>精神</td>
+              <td class="wrap">[相手]魔法&amp;精神&amp;魅力▼▼</td>
+            </tr>
+            <tr>
+              <th>胞子(毒-1)</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>体力</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>胞子(毒-2)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>胞子(睡眠)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>自爆</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>力</td>
+              <td class="wrap">割合ダメージ</td>
+            </tr>
+            <tr>
+              <th>臭い息(マヒ)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>臭い息(暗闇)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>花粉攻撃</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>木</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>落盤</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>落石</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>落雷</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>光、風、火</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>虫攻撃</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>衝撃波</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>触手(1)</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>触手(2)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>超重力</th>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">割合ダメージ</td>
+            </tr>
+            <tr>
+              <th>超音波</th>
+              <td>E</td>
+              <td>音波</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>跳びこみ</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>水</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>跳びこみ突き</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>踏みつけ(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体</td>
+              <td>防御</td>
+              <td class="wrap">[相手]体力▼▼</td>
+            </tr>
+            <tr>
+              <th>踏みつけ(2)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>踏みつけ(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>踏みつぶす</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">[相手]体力▼▼</td>
+            </tr>
+            <tr>
+              <th>蹴り(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>蹴り(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続(4)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続つつき</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続ひっかき</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続槍突き</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続水鉄砲</th>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>水</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続種</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>木</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続突き</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続糸弾</th>
+              <td>E</td>
+              <td>間接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>連続鞭</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>酸(1)</th>
+              <td>E</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>酸(2)</th>
+              <td>D</td>
+              <td>ブレス</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>針(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>金</td>
+              <td>技</td>
+              <td>技</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>針(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>金</td>
+              <td>技</td>
+              <td>技</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>針千本</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>鉄球</th>
+              <td>A</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>闇ひっかき</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>電撃</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>鞭</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>音符飛ばし</th>
+              <td>D</td>
+              <td>音波</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>頭で殴る</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>頭を投げる</th>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>頭突き(1)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>頭突き(2)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>頭突き(3)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>頭突き(ピヨリ-1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>頭突き(ピヨリ-2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>頭突き(ピヨリ-3)</th>
+              <td>C</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>風牙</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">毒</td>
+            </tr>
+            <tr>
+              <th>風船爆弾</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">ちびっこ</td>
+            </tr>
+            <tr>
+              <th>骨の穴</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>骨尖塔</th>
+              <td>B</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">暗闇</td>
+            </tr>
+            <tr>
+              <th>魅了凝視</th>
+              <td>E</td>
+              <td>凝視</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>魔人</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>魔法(1)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>魔法(2)</th>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>魔法(3)</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>闇、土、水</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>魔法(4)</th>
+              <td>B</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>木、水</td>
+              <td>体力</td>
+              <td>防御</td>
+              <td class="wrap">[相手]力▼▼</td>
+            </tr>
+            <tr>
+              <th>魔法(凍結)</th>
+              <td>A</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">凍結</td>
+            </tr>
+            <tr>
+              <th>鱗粉(マヒ)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>体力</td>
+              <td class="wrap">マヒ</td>
+            </tr>
+            <tr>
+              <th>鱗粉(混乱)</th>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魔法</td>
+              <td>体力</td>
+              <td class="wrap">混乱</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>敵NPCが使う攻撃</h2>
+      <p>イベントで戦うことになる人間のキャラクターが使う攻撃です。武器の種類が同じなら、こちらが使う通常攻撃と同じ動きをします。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead>
+            <tr><th>NPC</th><th>武器</th><th>攻撃名</th><th>威力</th><th>形態</th><th>種別</th><th>属性</th><th>攻撃</th><th>防御</th><th>追加効果</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>エスカデ</th>
+              <td>大剣</td>
+              <td>クイックアタック1</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エスカデ</th>
+              <td>大剣</td>
+              <td>クイックアタック2</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エスカデ</th>
+              <td>大剣</td>
+              <td>クイックアタック3</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エスカデ</th>
+              <td>大剣</td>
+              <td>コマンドアッパー</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エスカデ</th>
+              <td>大剣</td>
+              <td>コマンドジャンプ</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エスカデ</th>
+              <td>大剣</td>
+              <td>コマンドスラスト</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エスカデ</th>
+              <td>大剣</td>
+              <td>パワーアタック</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>エスカデ</th>
+              <td>大剣</td>
+              <td>奈落へ落ちろ</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>かぼちゃ攻撃</td>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>木、火</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>クイックアタック1</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>クイックアタック2</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>クイックアタック3</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>クイックアタック4</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>コマンドアッパー</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>コマンドジャンプ</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>コマンドスラスト</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>ノヴァシュトローム</td>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>パワーアタック</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>ファイアストーム</td>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>火</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">炎上</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>プラチナニードル</td>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>金</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]運▼▼</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>回転攻撃(弱)</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>コロナ</th>
+              <td>ほうき</td>
+              <td>回転攻撃(強)</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">ピヨリ</td>
+            </tr>
+            <tr>
+              <th>シエラ</th>
+              <td>短剣</td>
+              <td>クイックアタック1</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>シエラ</th>
+              <td>短剣</td>
+              <td>クイックアタック2</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>シエラ</th>
+              <td>短剣</td>
+              <td>クイックアタック3</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>シエラ</th>
+              <td>短剣</td>
+              <td>コマンドジャンプ</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>シエラ</th>
+              <td>短剣</td>
+              <td>コマンドスラスト</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダナエ</th>
+              <td>ヌンチャク</td>
+              <td>クイックアタック1</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダナエ</th>
+              <td>ヌンチャク</td>
+              <td>クイックアタック2</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダナエ</th>
+              <td>ヌンチャク</td>
+              <td>クイックアタック3</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダナエ</th>
+              <td>ヌンチャク</td>
+              <td>クイックアタック4</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダナエ</th>
+              <td>ヌンチャク</td>
+              <td>クイックアタック5</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダナエ</th>
+              <td>ヌンチャク</td>
+              <td>コマンドアッパー</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダナエ</th>
+              <td>ヌンチャク</td>
+              <td>コマンドジャンプ</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダナエ</th>
+              <td>ヌンチャク</td>
+              <td>パワーアタック</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ダナエ</th>
+              <td>ヌンチャク</td>
+              <td>ヒステリックラン</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>技</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ニキータ</th>
+              <td>グラブ</td>
+              <td>クイックアタック1</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ニキータ</th>
+              <td>グラブ</td>
+              <td>クイックアタック2</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ニキータ</th>
+              <td>グラブ</td>
+              <td>クイックアタック3</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ニキータ</th>
+              <td>グラブ</td>
+              <td>コマンドアッパー</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ニキータ</th>
+              <td>グラブ</td>
+              <td>コマンドジャンプ</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ニキータ</th>
+              <td>グラブ</td>
+              <td>コマンドスラスト</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ニキータ</th>
+              <td>グラブ</td>
+              <td>パワーアタック</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>ニキータ</th>
+              <td>グラブ</td>
+              <td>プレゼントにゃ</td>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>―</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>かぼちゃ攻撃</td>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>木、火</td>
+              <td>魅力</td>
+              <td>精神</td>
+              <td class="wrap">混乱</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>ウッドショット</td>
+              <td>E</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>木</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">眠り</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>クイックアタック1</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>クイックアタック2</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>クイックアタック3</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>コマンドアッパー</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>コマンドジャンプ</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>コマンドスラスト</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>パワーアタック</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>フライパン攻撃</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>ロックストリーム</td>
+              <td>D</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>土</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">[相手]防御▼▼</td>
+            </tr>
+            <tr>
+              <th>バド</th>
+              <td>フライパン</td>
+              <td>ローズストラングル</td>
+              <td>C</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td>木</td>
+              <td>魔法</td>
+              <td>魔法</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>レディパール</th>
+              <td>バトルハンマー</td>
+              <td>クイックアタック1</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>レディパール</th>
+              <td>バトルハンマー</td>
+              <td>クイックアタック2</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>レディパール</th>
+              <td>バトルハンマー</td>
+              <td>クイックアタック3</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>レディパール</th>
+              <td>バトルハンマー</td>
+              <td>コマンドジャンプ</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>レディパール</th>
+              <td>バトルハンマー</td>
+              <td>コマンドスラスト</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>レディパール</th>
+              <td>バトルハンマー</td>
+              <td>シャドーウォール</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>レディパール</th>
+              <td>バトルハンマー</td>
+              <td>パワーアタック</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>たたき</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>瑠璃</th>
+              <td>片手剣</td>
+              <td>クイックアタック1</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>瑠璃</th>
+              <td>片手剣</td>
+              <td>クイックアタック2</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>瑠璃</th>
+              <td>片手剣</td>
+              <td>クイックアタック3</td>
+              <td>E</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>瑠璃</th>
+              <td>片手剣</td>
+              <td>コマンドジャンプ</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>瑠璃</th>
+              <td>片手剣</td>
+              <td>コマンドスラスト</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>突き</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>瑠璃</th>
+              <td>片手剣</td>
+              <td>パワーアタック</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+            <tr>
+              <th>瑠璃</th>
+              <td>片手剣</td>
+              <td>レーザーブレード</td>
+              <td>D</td>
+              <td>直接</td>
+              <td>斬り</td>
+              <td>―</td>
+              <td>力</td>
+              <td>防御</td>
+              <td class="wrap">―</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>追加効果から引く</h2>
+      <p>同じ状態異常にしてくる攻撃をまとめました。対策の装備を選ぶときの目安になります。</p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>追加効果</th><th>攻撃</th></tr></thead>
+          <tbody>
+            <tr><th>HP吸収</th><td>HP吸収、まるのみ(1)、まるのみ(2)、まるのみ(3)、ドレイン光球、ビーム(4)、ブラッディサークル、吸収、吸血かみつき、拡大タッチ</td></tr>
+            <tr><th>[相手]体力▼▼</th><td>たたきつぶす、エメラルドパイン、剣兜割り、竜語魔法(2)、踏みつけ(1)、踏みつぶす</td></tr>
+            <tr><th>[相手]全能力値▼</th><td>粘液(1)</td></tr>
+            <tr><th>[相手]全能力値▼▼</th><td>粘液(2)、粘液(3)</td></tr>
+            <tr><th>[相手]力&amp;技&amp;防御▼▼</th><td>天上天下(1)</td></tr>
+            <tr><th>[相手]力▼</th><td>しがみつき</td></tr>
+            <tr><th>[相手]力▼▼</th><td>ため息、ブレイズランチャー、ブレイズヴァイス、魔法(4)</td></tr>
+            <tr><th>[相手]技▼▼</th><td>サイクロンニードル</td></tr>
+            <tr><th>[相手]精神▼▼</th><td>ブラックシックル、ブラックシャムシール、ブラックスティンガー、プチアイビーム(1)</td></tr>
+            <tr><th>[相手]運▼▼</th><td>プラチナニードル、プラチナニードル</td></tr>
+            <tr><th>[相手]防御▼▼</th><td>ロックウォール、ロックストリーム、ロックストリーム</td></tr>
+            <tr><th>[相手]魅力▼▼</th><td>アイビーム、プチアイビーム(2)、ホーリーステイク、片目アイビーム</td></tr>
+            <tr><th>[相手]魔力▼▼</th><td>竜語魔法(1)</td></tr>
+            <tr><th>[相手]魔法&amp;精神&amp;魅力▼▼</th><td>天上天下(2)、肋骨</td></tr>
+            <tr><th>[相手]魔法▼▼</th><td>ウォーターダンク、トライデント、呪いの剣(1)、呪いの剣(2)、呪いの剣(3)</td></tr>
+            <tr><th>ちびっこ</th><td>ちびっこバブル、キッス、風船爆弾</td></tr>
+            <tr><th>アタックゲージゼロ</th><td>にらみつけ、リップル(右下顔)、光輪(光)、光輪(土)、光輪(水)、光輪(火)、光輪(金)、光輪(闇)、光輪(風)、凝視(アタックゲージゼロ)</td></tr>
+            <tr><th>ピヨリ</th><td>つらら(ピヨリ)、ケンカキック、ダイブアタック、ダブルラリアット、回転攻撃(1)、回転攻撃(2)、斧振り(ピヨリ)、頭突き(ピヨリ-1)、頭突き(ピヨリ-2)、頭突き(ピヨリ-3)、回転攻撃(弱)、回転攻撃(強)</td></tr>
+            <tr><th>マヒ</th><td>しがみつき(マヒ)、まきつき、エアウインド、エアショット、スパイダーネット、ベロ(マヒ)、マヒ凝視、マヒ投石、放電(マヒ)、次元環、泣く、爪(マヒ)、臭い息(マヒ)、連続鞭、鞭、鱗粉(マヒ)</td></tr>
+            <tr><th>凍結</th><td>ドラゴンブレス(凍結)、バブルショック、ファイアーブレス、魔法(凍結)</td></tr>
+            <tr><th>割合ダメージ</th><td>自爆、超重力</td></tr>
+            <tr><th>暗闇</th><td>イビルウェイブ、イビルプリズン、サンドブレス、スミ、パンチ(暗闇)、ブラックホール、光球、呪いの剣(暗闇)、砂ブレス、臭い息(暗闇)、闇ひっかき、骨尖塔</td></tr>
+            <tr><th>毒</th><td>ケルベロスフォース、ゴールドハリケーン、ドラゴンブレス、ドラゴンブレス(毒)、ポイズンブレス、尻尾(毒)、強酸、毒かみつき、毒矢、毒花粉、毒針、羽虫ブレス、胞子(毒-1)、酸(1)、酸(2)、風牙</td></tr>
+            <tr><th>混乱</th><td>あやつりいと、うっふん、なめる(混乱)、オーブ、ボール遊び、リップル(左下顔)、リングビーム(混乱)、凝視(混乱)、楽器、泣き叫ぶ、胞子(毒-2)、花粉攻撃、虫攻撃、超音波、魅了凝視、魔人、鱗粉(混乱)、かぼちゃ攻撃、かぼちゃ攻撃</td></tr>
+            <tr><th>炎上</th><td>ドラゴンブレス(炎上)、ファイア(1)、ファイア(2)、ファイア(3)、ファイアカクテル、ファイアブレス、ブレス(炎上-1)、ブレス(炎上-2)、プチブレス、火炎放射、ファイアストーム</td></tr>
+            <tr><th>眠り</th><td>なめる(眠り)、ウッドスカッシュ、バブルブレス、ブレス(眠り)、プチバブル、催眠凝視、凝視(眠り)、小泡、絨毯めくり、胞子(睡眠)、音符飛ばし、ウッドショット</td></tr>
+            <tr><th>石化</th><td>凝視(石化)、石化くちばし、石化ガス、石化光線、石化凝視、粒子加速ビーム</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/lom/monsters/">モンスター・ペット</a></li>
+          <li><a href="/lom/battle/">バトル・必殺技</a></li>
+          <li><a href="/lom/equipment/">武器・防具・楽器</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/lom/">トップ</a>
+        <a href="/lom/about/">このWikiについて</a>
+        <a href="/lom/privacy/">プライバシーポリシー</a>
+        <a href="/lom/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 聖剣伝説 Legend of Mana 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/lom/js/main.js?v=1e346c8a"></script>
+</body>
+</html>
