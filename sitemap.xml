@@ -286,6 +286,41 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://gamers-wiki.github.io/lom/extra/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gamers-wiki.github.io/lom/extra/books/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gamers-wiki.github.io/lom/extra/minigame/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gamers-wiki.github.io/lom/extra/pocketstation/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gamers-wiki.github.io/lom/extra/secrets-battle/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gamers-wiki.github.io/lom/extra/secrets-event/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gamers-wiki.github.io/lom/extra/secrets-variety/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gamers-wiki.github.io/lom/golem/</loc>
     <lastmod>2026-09-17</lastmod>
     <priority>0.8</priority>
