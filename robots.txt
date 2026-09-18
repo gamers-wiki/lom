@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /lom/search/
-
-Sitemap: https://gamers-wiki.github.io/lom/sitemap.xml
